@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neofluxx</title>
+  <meta name="description" content="Uma breve descrição do conteúdo da sua página neofluxx.">
+  <link rel="canonical" href="https://neofluxx.com" />
+  <meta name="keywords" content="neofluxx,">
+  <meta name="robots" content="index, follow">
+
+  <link rel="icon" href="./assets/icons/favicon.svg" />
+  
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Neofluxx">
+  <meta property="og:description" content="Sua descrição aqui.">
+  <meta property="og:url" content="https://neofluxx.com">
+  <meta property="og:image" content="URL-da-imagem">
+  <meta property="og:site_name" content="Neofluxx" />
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="200">
+  <meta property="og:image:height" content="200">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+
+  <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+
+  <!-- Header / Navegação -->
+  <header id="header">
+    <div class="header-wrapper"> 
+      <div id="header-inner" class="header-inner">
+
+        <div class="container">
+          
+          <a href="/">
+            <img src="./assets/images/logo.png" alt="logo neofluxx">
+          </a>
+
+          <!-- 1. Checkbox que guarda o estado (oculto) -->
+          <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+
+          <label for="menu-toggle" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+
+          <nav class="nav">
+            <ul>
+              <li><a href="">Ferramentas</a></li>
+              <li class="nav-login-li"><a href=""><span><img src="./assets/icons/user.svg" alt="login"></span> Login</a></li>
+              <li> <button type="button" id="open-demo" class="btn open-demo"> Solicitar demonstração </button> </li>
+            </ul>
+          </nav>
+
+          <!-- Menu mobile full‑screen -->
+          <nav id="mobile-menu" class="mobile-menu">
+
+            <div class="mobile-header-nav">
+              <button type="button" class="close-menu" id="btn-close" aria-label="Fechar menu">
+                <img style="width: 24px;" src="./assets/icons/CarteLeftGray.svg" alt="fechar menu">
+              </button>
+
+              <div>
+                <a href="/">
+                <img src="./assets/images/logo.png" alt="logo neofluxx">
+                </a>
+              </div>
+
+              <div></div>
+            </div>
+
+            <ul class="mobile-menu-list">
+              <div class="-list-header">
+                <li><a href="">Login</a></li>
+                <hr>
+                <li><a href="">Ferramentas</a></li>
+              </div>
+
+              <div class="-list-footer">
+                <li class="button-li"><button type="button" class="btn open-demo">Solicitar demonstração</button></li>
+              </div>
+
+            </ul>
+          </nav>
+          
+
+        </div>
+
+      </div>
+    </div>
+    
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="container">
+      <div class="hero-one">
+        <div class="g1"></div>
+        <h1>Inteligência que conecta. <span>Resultados que surpreendem.</span></h1>
+        <p>Transforme cada conversa em valor de negócio com a plataforma omnichannel e automação de processos da Neofluxx.</p>
+        <button type="button" id="open-demo" class="btn open-demo"> Solicitar demonstração </button>
+      </div>
+
+       <div class="image-hero">
+        <img src=".../../assets/images/arte-desktop-b.png" alt="pessoa segurando notebook acessando sistema neofluxx">
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal de Solicitação -->
+  <dialog id="demo-dialog" class="demo-dialog">
+    <form method="dialog" class="demo-form">
+      <button type="button" class="close-btn" id="close-demo" aria-label="Fechar">
+        <img src="./assets/icons/close.svg" alt="fechar">
+      </button>
+      <h2>Solicitação de demonstração</h2>
+
+      <p>Transforme cada conversa em valor de negócio com a plataforma omnichannel e automação de processos da Neofluxx.</p>
+
+      <label for="demo-name">Nome</label>
+      <input type="text" id="demo-name" name="name" required />
+
+      <label for="demo-email">E-mail</label>
+      <input type="email" id="demo-email" name="email" required />
+
+      <label class="checkbox-label">
+        <input type="checkbox" id="demo-agree" name="agree" required />
+        Li e aceito os termos
+      </label>
+
+      <button type="submit" id="open-demo" class="btn submit-btn">
+        Solicitar demonstração
+      </button>
+    </form>
+  </dialog>
+
+   <!-- Main Content -->
+  <main>
+    <section id="one">
+      <div class="container">
+        <div class="wrapper">
+
+          <div class="one-div1">
+            <h3>Seus clientes mudam de canal em segundos; <span>seu time não pode levar minutos</span> para acompanhar.</h3>
+
+            <div class="--wrapper-p">
+              <p>Plataformas de atendimento tradicionais focam em “resolver tickets”. Nós focamos em criar relacionamentos duradouros — e receita previsível. </p>
+
+              <a style="cursor: pointer;" class="open-demo">Descubra como <img src="./assets/icons/CaretRight.svg" alt="descubra como"></a>
+            </div>
+          </div>
+          
+          <div class="one-div2">
+            <img src="./assets/images/arte2-desktop.png" alt="pessoa no smartphone acessando o chat neofluxx">
+          </div>
+
+          <div class="one-div2-mobile">
+            <img src="./assets/images/arte2-mobile.png" alt="pessoa no smartphone acessando o chat neofluxx">
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="two">
+      <div class="container">
+        <h2>Muito além de um help desk</h2>
+        <p class="subtitle">Somos uma <span>Customer Engagement Platform:</span> contexto, comunicação e IA no mesmo lugar. O resultado? Personalização em escala sem silos de dados.</p>
+
+        <div class="wrapper-cards">
+          <div class="wrapper-card">
+            <div class="card-header">
+              <img src="./assets/images/card1.png" alt="inbox único">
+            </div>
+            <div class="card-footer">
+              <p class="card-text">inbox único</p>
+              <p class="card-title">Omnichannel sem atrito</p>
+              <p class="card-p">Um único inbox para site, e‑mail, WhatsApp, Instagram, Telegram e mais – todas as conversas lado a lado.
+              APIs abertas para integrar qualquer canal futuro sem refazer seu stack.</p>
+            </div>
+          </div>
+
+          <div class="wrapper-card">
+            <div class="card-header">
+              <img src="./assets/images/card2.png" alt="ia copilot">
+            </div>
+            <div class="card-footer">
+              <p class="card-text">ia copilot</p>
+              <p class="card-title">IA aplicada ao atendimento</p>
+              <p class="card-p">Agentes de Inteligência Artificial que aprendem com seu conhecimento interno, sugere respostas e redige follow‑ups proativos. Traduções instantâneas e redução de volume de suporte comprovadas.</p>
+            </div>
+          </div>
+
+          <div class="wrapper-card">
+            <div class="card-header">
+              <img src="./assets/images/card3.png" alt="fluxo conectado">
+            </div>
+            <div class="card-footer">
+              <p class="card-text">fluxo conectado</p>
+              <p class="card-title">Automação de processos</p>
+              <p class="card-p">Workflows visuais conectam CRM, ERP e sistemas de ponta a ponta.
+              Dados em tempo real para personalizar cada interação com precisão cirúrgica.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="three">
+      <div class="container">
+        <h3>Reúna seus atendimentos de <span>diferentes canais</span> e otimize seus resultados</h3>
+        <p class="subtitle">Um único ambiente para atender mais rápido e com um fluxo organizado, sem perder oportunidades.
+        </p>
+    
+        <div class="wrapper">
+          <div class="icons-three">
+            <img src="./assets/icons/wpp.svg" alt="WhatsApp" class="icon" data-channel="whatsapp">
+            
+            <svg class="icon" data-channel="instagram" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10.6644 16C10.6644 13.0546 13.0508 10.6662 15.9954 10.6662C18.9399 10.6662 21.3276 13.0546 21.3276 16C21.3276 18.9454 18.9399 21.3338 15.9954 21.3338C13.0508 21.3338 10.6644 18.9454 10.6644 16ZM7.78195 16C7.78195 20.5376 11.4591 24.2158 15.9954 24.2158C20.5317 24.2158 24.2088 20.5376 24.2088 16C24.2088 11.4624 20.5317 7.78419 15.9954 7.78419C11.4591 7.78419 7.78195 11.4624 7.78195 16ZM22.6145 7.45843C22.6144 7.83817 22.7268 8.20943 22.9376 8.52526C23.1484 8.84108 23.448 9.08729 23.7987 9.23275C24.1494 9.37821 24.5353 9.41639 24.9077 9.34246C25.2801 9.26852 25.6221 9.0858 25.8907 8.81739C26.1592 8.54898 26.3422 8.20694 26.4164 7.83453C26.4906 7.46211 26.4527 7.07605 26.3076 6.72516C26.1625 6.37426 25.9166 6.0743 25.601 5.8632C25.2854 5.65211 24.9144 5.53935 24.5347 5.5392H24.534C24.0251 5.53944 23.5371 5.74169 23.1773 6.10155C22.8174 6.4614 22.615 6.94942 22.6145 7.45843ZM9.53325 29.0236C7.97376 28.9526 7.12613 28.6927 6.56284 28.4732C5.81605 28.1824 5.28321 27.836 4.72299 27.2764C4.16277 26.7168 3.81599 26.1843 3.52653 25.4373C3.30695 24.8741 3.04718 24.026 2.97629 22.466C2.89875 20.7795 2.88326 20.2729 2.88326 16.0001C2.88326 11.7274 2.90003 11.2221 2.97629 9.53421C3.04731 7.97427 3.309 7.12781 3.52653 6.56294C3.81727 5.81594 4.16353 5.28294 4.72299 4.72256C5.28244 4.16218 5.81477 3.8153 6.56284 3.52576C7.12588 3.30611 7.97376 3.04627 9.53325 2.97536C11.2193 2.89779 11.7258 2.8823 15.9954 2.8823C20.265 2.8823 20.772 2.89907 22.4594 2.97536C24.0189 3.0464 24.8651 3.30816 25.4298 3.52576C26.1766 3.8153 26.7095 4.16294 27.2697 4.72256C27.8299 5.28218 28.1754 5.81594 28.4661 6.56294C28.6857 7.12614 28.9455 7.97427 29.0164 9.53421C29.0939 11.2221 29.1094 11.7274 29.1094 16.0001C29.1094 20.2729 29.0939 20.7781 29.0164 22.466C28.9454 24.026 28.6843 24.8739 28.4661 25.4373C28.1754 26.1843 27.8291 26.7173 27.2697 27.2764C26.7102 27.8355 26.1766 28.1824 25.4298 28.4732C24.8668 28.6929 24.0189 28.9527 22.4594 29.0236C20.7734 29.1012 20.2669 29.1167 15.9954 29.1167C11.7238 29.1167 11.2188 29.1012 9.53325 29.0236ZM9.40081 0.096896C7.698 0.174464 6.53443 0.444544 5.51828 0.840064C4.46591 1.24851 3.57503 1.79648 2.68479 2.68557C1.79455 3.57466 1.24815 4.4672 0.839821 5.51987C0.444416 6.53696 0.174414 7.70022 0.096868 9.40352C0.0180428 11.1095 0 11.6549 0 16C0 20.3451 0.0180428 20.8905 0.096868 22.5965C0.174414 24.2999 0.444416 25.463 0.839821 26.4801C1.24815 27.5322 1.79468 28.4257 2.68479 29.3144C3.5749 30.2031 4.46591 30.7503 5.51828 31.1599C6.53635 31.5555 7.698 31.8255 9.40081 31.9031C11.1072 31.9807 11.6515 32 15.9954 32C20.3392 32 20.8845 31.982 22.59 31.9031C24.2929 31.8255 25.4557 31.5555 26.4725 31.1599C27.5242 30.7503 28.4157 30.2035 29.306 29.3144C30.1962 28.4253 30.7415 27.5322 31.1509 26.4801C31.5463 25.463 31.8176 24.2998 31.8939 22.5965C31.9714 20.8892 31.9895 20.3451 31.9895 16C31.9895 11.6549 31.9714 11.1095 31.8939 9.40352C31.8163 7.7001 31.5463 6.53632 31.1509 5.51987C30.7415 4.46784 30.1948 3.57606 29.306 2.68557C28.4171 1.79507 27.5242 1.24851 26.4738 0.840064C25.4557 0.444544 24.2928 0.173184 22.5912 0.096896C20.8857 0.019328 20.3405 0 15.9967 0C11.6528 0 11.1072 0.018048 9.40081 0.096896Z" fill="#B937AA"/>
+            <path d="M10.6644 16C10.6644 13.0546 13.0508 10.6662 15.9954 10.6662C18.9399 10.6662 21.3276 13.0546 21.3276 16C21.3276 18.9454 18.9399 21.3338 15.9954 21.3338C13.0508 21.3338 10.6644 18.9454 10.6644 16ZM7.78195 16C7.78195 20.5376 11.4591 24.2158 15.9954 24.2158C20.5317 24.2158 24.2088 20.5376 24.2088 16C24.2088 11.4624 20.5317 7.78419 15.9954 7.78419C11.4591 7.78419 7.78195 11.4624 7.78195 16ZM22.6145 7.45843C22.6144 7.83817 22.7268 8.20943 22.9376 8.52526C23.1484 8.84108 23.448 9.08729 23.7987 9.23275C24.1494 9.37821 24.5353 9.41639 24.9077 9.34246C25.2801 9.26852 25.6221 9.0858 25.8907 8.81739C26.1592 8.54898 26.3422 8.20694 26.4164 7.83453C26.4906 7.46211 26.4527 7.07605 26.3076 6.72516C26.1625 6.37426 25.9166 6.0743 25.601 5.8632C25.2854 5.65211 24.9144 5.53935 24.5347 5.5392H24.534C24.0251 5.53944 23.5371 5.74169 23.1773 6.10155C22.8174 6.4614 22.615 6.94942 22.6145 7.45843ZM9.53325 29.0236C7.97376 28.9526 7.12613 28.6927 6.56284 28.4732C5.81605 28.1824 5.28321 27.836 4.72299 27.2764C4.16277 26.7168 3.81599 26.1843 3.52653 25.4373C3.30695 24.8741 3.04718 24.026 2.97629 22.466C2.89875 20.7795 2.88326 20.2729 2.88326 16.0001C2.88326 11.7274 2.90003 11.2221 2.97629 9.53421C3.04731 7.97427 3.309 7.12781 3.52653 6.56294C3.81727 5.81594 4.16353 5.28294 4.72299 4.72256C5.28244 4.16218 5.81477 3.8153 6.56284 3.52576C7.12588 3.30611 7.97376 3.04627 9.53325 2.97536C11.2193 2.89779 11.7258 2.8823 15.9954 2.8823C20.265 2.8823 20.772 2.89907 22.4594 2.97536C24.0189 3.0464 24.8651 3.30816 25.4298 3.52576C26.1766 3.8153 26.7095 4.16294 27.2697 4.72256C27.8299 5.28218 28.1754 5.81594 28.4661 6.56294C28.6857 7.12614 28.9455 7.97427 29.0164 9.53421C29.0939 11.2221 29.1094 11.7274 29.1094 16.0001C29.1094 20.2729 29.0939 20.7781 29.0164 22.466C28.9454 24.026 28.6843 24.8739 28.4661 25.4373C28.1754 26.1843 27.8291 26.7173 27.2697 27.2764C26.7102 27.8355 26.1766 28.1824 25.4298 28.4732C24.8668 28.6929 24.0189 28.9527 22.4594 29.0236C20.7734 29.1012 20.2669 29.1167 15.9954 29.1167C11.7238 29.1167 11.2188 29.1012 9.53325 29.0236ZM9.40081 0.096896C7.698 0.174464 6.53443 0.444544 5.51828 0.840064C4.46591 1.24851 3.57503 1.79648 2.68479 2.68557C1.79455 3.57466 1.24815 4.4672 0.839821 5.51987C0.444416 6.53696 0.174414 7.70022 0.096868 9.40352C0.0180428 11.1095 0 11.6549 0 16C0 20.3451 0.0180428 20.8905 0.096868 22.5965C0.174414 24.2999 0.444416 25.463 0.839821 26.4801C1.24815 27.5322 1.79468 28.4257 2.68479 29.3144C3.5749 30.2031 4.46591 30.7503 5.51828 31.1599C6.53635 31.5555 7.698 31.8255 9.40081 31.9031C11.1072 31.9807 11.6515 32 15.9954 32C20.3392 32 20.8845 31.982 22.59 31.9031C24.2929 31.8255 25.4557 31.5555 26.4725 31.1599C27.5242 30.7503 28.4157 30.2035 29.306 29.3144C30.1962 28.4253 30.7415 27.5322 31.1509 26.4801C31.5463 25.463 31.8176 24.2998 31.8939 22.5965C31.9714 20.8892 31.9895 20.3451 31.9895 16C31.9895 11.6549 31.9714 11.1095 31.8939 9.40352C31.8163 7.7001 31.5463 6.53632 31.1509 5.51987C30.7415 4.46784 30.1948 3.57606 29.306 2.68557C28.4171 1.79507 27.5242 1.24851 26.4738 0.840064C25.4557 0.444544 24.2928 0.173184 22.5912 0.096896C20.8857 0.019328 20.3405 0 15.9967 0C11.6528 0 11.1072 0.018048 9.40081 0.096896Z" fill="url(#paint0_radial_109_317)"/>
+            <defs>
+            <radialGradient id="paint0_radial_109_317" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(19.401 33.5848) scale(32.9136 32.9231)">
+            <stop offset="0.64" stop-color="#8C3AAA" stop-opacity="0"/>
+            <stop offset="1" stop-color="#8C3AAA"/>
+            </radialGradient>
+            </defs>
+            </svg>
+            
+            <svg class="icon" width="32" data-channel="facebook" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16 0C6.988 0 0 6.60382 0 15.5196C0 20.1834 1.912 24.2153 5.024 26.9993C5.284 27.2313 5.444 27.5592 5.452 27.9112L5.54 30.7592C5.54641 30.9687 5.60419 31.1735 5.70827 31.3555C5.81234 31.5374 5.95953 31.6911 6.13689 31.8029C6.31425 31.9146 6.51635 31.9812 6.72544 31.9965C6.93452 32.0119 7.14418 31.9757 7.336 31.8911L10.512 30.4912C10.78 30.3712 11.084 30.3512 11.368 30.4272C12.828 30.8272 14.38 31.0431 16 31.0431C25.012 31.0431 32 24.4393 32 15.5236C32 6.60782 25.012 0 16 0Z" fill="#7D4AFF"/>
+            <path d="M6.392 20.0595L11.092 12.6037C11.2688 12.3229 11.5019 12.0819 11.7765 11.8959C12.0512 11.7098 12.3614 11.5827 12.6877 11.5225C13.0139 11.4624 13.3491 11.4705 13.6721 11.5465C13.995 11.6224 14.2987 11.7645 14.564 11.9637L18.304 14.7676C18.471 14.8926 18.6741 14.9598 18.8827 14.9591C19.0912 14.9584 19.2939 14.8897 19.46 14.7636L24.508 10.9317C25.18 10.4197 26.06 11.2277 25.612 11.9437L20.908 19.3955C20.7312 19.6762 20.4981 19.9172 20.2235 20.1033C19.9488 20.2893 19.6386 20.4165 19.3123 20.4766C18.986 20.5367 18.6509 20.5286 18.3279 20.4527C18.005 20.3767 17.7013 20.2347 17.436 20.0354L13.696 17.2315C13.529 17.1065 13.3259 17.0393 13.1173 17.04C12.9088 17.0407 12.7061 17.1094 12.54 17.2355L7.492 21.0674C6.82 21.5794 5.94 20.7754 6.392 20.0595Z" fill="white"/>
+            </svg>
+            
+            <svg class="icon" data-channel="telegram" width="32" height="27" viewBox="0 0 32 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.96187 11.7586C1.96187 11.7586 16.1147 5.83156 21.0231 3.74452C22.9048 2.90977 29.2858 0.23834 29.2858 0.23834C29.2858 0.23834 32.2309 -0.930308 31.9855 1.90795C31.9036 3.07672 31.2492 7.16716 30.5948 11.5916C29.613 17.8526 28.5495 24.6979 28.5495 24.6979C28.5495 24.6979 28.3859 26.618 26.9952 26.9519C25.6045 27.2858 23.3137 25.7833 22.9048 25.4493C22.5775 25.1989 16.7691 21.4422 14.6421 19.6057C14.0694 19.1048 13.415 18.1031 14.7239 16.9344C17.669 14.1795 21.1867 10.7569 23.3137 8.5864C24.2955 7.58459 25.2771 5.24718 21.1867 8.08544C15.3784 12.176 9.65184 16.0161 9.65184 16.0161C9.65184 16.0161 8.34287 16.8508 5.88866 16.0995C3.43433 15.3483 0.571038 14.3465 0.571038 14.3465C0.571038 14.3465 -1.39224 13.0943 1.96187 11.7586Z" fill="#34AADF"/>
+            </svg>
+
+            <svg class="icon" width="32" data-channel="email" width="26" height="20" viewBox="0 0 26 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M25 0H1C0.734784 0 0.48043 0.105357 0.292893 0.292893C0.105357 0.48043 0 0.734784 0 1V18C0 18.5304 0.210714 19.0391 0.585786 19.4142C0.960859 19.7893 1.46957 20 2 20H24C24.5304 20 25.0391 19.7893 25.4142 19.4142C25.7893 19.0391 26 18.5304 26 18V1C26 0.734784 25.8946 0.48043 25.7071 0.292893C25.5196 0.105357 25.2652 0 25 0ZM24 18H2V3.27375L12.3237 12.7375C12.5082 12.9069 12.7496 13.0008 13 13.0008C13.2504 13.0008 13.4918 12.9069 13.6763 12.7375L24 3.27375V18Z" fill="#B042C9"/>
+            </svg>
+                        
+            <svg class="icon" width="32" data-channel="website" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13 0C10.4288 0 7.91543 0.762437 5.77759 2.1909C3.63975 3.61935 1.97351 5.64968 0.989572 8.02512C0.0056327 10.4006 -0.251811 13.0144 0.249797 15.5362C0.751405 18.0579 1.98953 20.3743 3.80762 22.1924C5.6257 24.0105 7.94208 25.2486 10.4638 25.7502C12.9856 26.2518 15.5995 25.9944 17.9749 25.0104C20.3503 24.0265 22.3807 22.3603 23.8091 20.2224C25.2376 18.0846 26 15.5712 26 13C25.996 9.5534 24.6251 6.24911 22.188 3.812C19.7509 1.37488 16.4466 0.00396997 13 0ZM22.795 8H18.3388C17.7776 5.94113 16.8318 4.00709 15.5513 2.3C17.0984 2.67166 18.5469 3.37347 19.7974 4.35732C21.0479 5.34117 22.0709 6.58379 22.7963 8H22.795ZM24 13C24.0009 14.0145 23.8608 15.0241 23.5838 16H18.77C19.0767 14.0118 19.0767 11.9882 18.77 10H23.5838C23.8608 10.9759 24.0009 11.9855 24 13ZM13 2.375C14.4974 3.97815 15.609 5.90204 16.25 8H9.75001C10.3904 5.90176 11.502 3.97773 13 2.375ZM9.75001 18H16.25C15.6096 20.0982 14.498 22.0223 13 23.625C11.5026 22.0218 10.391 20.098 9.75001 18ZM9.26251 16C8.91918 14.0147 8.91918 11.9853 9.26251 10H16.7475C17.0908 11.9853 17.0908 14.0147 16.7475 16H9.26251ZM15.5563 23.7C16.8368 21.9929 17.7826 20.0589 18.3438 18H22.8013C22.0754 19.4168 21.0516 20.6597 19.8002 21.6436C18.5488 22.6275 17.0993 23.329 15.5513 23.7H15.5563Z" fill="#13CCC0"/>
+            </svg>
+
+            <svg class="icon" width="32" data-channel="sms" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M25 12.5C24.9964 15.8141 23.6782 18.9914 21.3348 21.3348C18.9914 23.6782 15.8141 24.9964 12.5 25H2C1.46957 25 0.960859 24.7893 0.585786 24.4142C0.210714 24.0391 0 23.5304 0 23V12.5C4.94004e-08 9.18479 1.31696 6.00537 3.66117 3.66116C6.00537 1.31696 9.18479 0 12.5 0C15.8152 0 18.9946 1.31696 21.3388 3.66116C23.683 6.00537 25 9.18479 25 12.5Z" fill="#C3C53B"/>
+            </svg>
+
+            <!-- <img src="./assets/icons/insta.svg" alt="Instagram" class="icon" data-channel="instagram"> -->
+            <!-- <img src="./assets/icons/messenger.svg" alt="Facebook" class="icon" data-channel="facebook"> -->
+            <!-- <img src="./assets/icons/telegram.svg" alt="Telegram" class="icon" data-channel="telegram"> -->
+            <!-- <img src="./assets/icons/Vector.svg" alt="Email" class="icon" data-channel="email">
+            <img src="./assets/icons/Vector-1.svg" alt="Website" class="icon" data-channel="website"> -->
+            <!-- <img src="./assets/icons/Vector-2.svg" alt="SMS" class="icon" data-channel="sms"> -->
+          </div>
+    
+          <!-- Aqui vem o nosso accordion FAQ -->
+          <div class="faq-accordion">
+            <!-- WhatsApp Business API -->
+            <details class="faq-item" close>
+              <summary class="faq-question">
+                <div class="faq-item-icon">
+                  <img src="./assets/icons/icons-whatsapp.svg" alt="WhatsApp" class="faq-icon">
+                  WhatsApp Business API
+                </div>
+                <span class="faq-arrow"><img src="./assets/icons/CaretDown.svg" alt=""></span>
+              </summary>
+              <div class="faq-answer">
+                <p>
+                  Ofereça um suporte instantâneo e simplificado, conectando‑se diretamente com seus clientes do WhatsApp.
+                </p>
+                <ul>
+                  <li><img src="./assets/images/reactok.png" alt="ok">Envie respostas rápidas a perguntas comuns automaticamente.</li>
+                  <li><img src="./assets/images/reactok.png" alt="ok">Mantenha todos os bate‑papos com clientes em um só lugar para facilitar o gerenciamento.</li>
+                  <li><img src="./assets/images/reactok.png" alt="ok">Compartilhe chats com sua equipe e assegure respostas a todos.</li>
+                  <li><img src="./assets/images/reactok.png" alt="ok">Acompanhe facilmente o histórico de conversas para fornecer melhor suporte.</li>
+                </ul>
+              </div>
+            </details>
+
+            <!-- Instagram -->
+            <details class="faq-item" close>
+              <summary class="faq-question">
+                <div class="faq-item-icon">
+                  <img src="./assets/icons/icons-instagram.svg" alt="Instagram" class="faq-icon">
+                  Instagram
+                </div>
+                <span class="faq-arrow"><img src="./assets/icons/CaretDown.svg" alt=""></span>
+              </summary>
+              <div class="faq-answer">
+                <p>
+                  Engaje seu público no Instagram com respostas automatizadas e gestão centralizada de mensagens.
+                </p>
+                <ul>
+                  <li><img src="./assets/images/reactok.png" alt="ok">Responda comentários e direct messages de forma unificada.</li>
+                  <li><img src="./assets/images/reactok.png" alt="ok">Automatize respostas a DMs com templates personalizados.</li>
+                  <li><img src="./assets/images/reactok.png" alt="ok">Filtre e organize menções por hashtags para melhor engajamento.</li>
+                  <li><img src="./assets/images/reactok.png" alt="ok">Analise métricas de engajamento e conversão em tempo real.</li>
+                </ul>
+              </div>
+            </details>
+
+            <!-- Facebook Messenger -->
+            <details class="faq-item" close>
+              <summary class="faq-question">
+                <div class="faq-item-icon">
+                  <img src="./assets/icons/icons-facebook.svg" alt="Facebook Messenger" class="faq-icon">
+                  Facebook Messenger
+                </div>
+                <span class="faq-arrow"><img src="./assets/icons/CaretDown.svg" alt=""></span>
+              </summary>
+              <div class="faq-answer">
+                <p>
+                  Ofereça atendimento integrado pelo Facebook Messenger, com automações e roteamentos inteligentes.
+                </p>
+                <ul>
+                  <li><img src="./assets/images/reactok.png" alt="ok">Centralize conversas do Messenger em um único painel.</li>
+                  <li><img src="./assets/images/reactok.png" alt="ok">Use chatbots para automação de respostas rápidas.</li>
+                  <li><img src="./assets/images/reactok.png" alt="ok">Roteie chats para agentes específicos com base em tags.</li>
+                  <li><img src="./assets/images/reactok.png" alt="ok">Gere relatórios de performance e tempo de resposta.</li>
+                </ul>
+              </div>
+            </details>
+
+            <!-- Telegram -->
+            <details class="faq-item" close>
+              <summary class="faq-question">
+                <div class="faq-item-icon">
+                  <img src="./assets/icons/icons-telegram.svg" alt="Telegram" class="faq-icon">
+                  Telegram
+                </div>
+                <span class="faq-arrow"><img src="./assets/icons/CaretDown.svg" alt=""></span>
+              </summary>
+              <div class="faq-answer">
+                <p>
+                  Amplie seu atendimento via Telegram com bots e respostas rápidas totalmente integradas.
+                </p>
+                <ul>
+                  <li><img src="./assets/images/reactok.png" alt="ok">Configure bots com comandos personalizados e fluxos de resposta.</li>
+                  <li><img src="./assets/images/reactok.png" alt="ok">Gerencie grupos e canais diretamente do painel central.</li>
+                  <li><img src="./assets/images/reactok.png" alt="ok">Envie notificações transacionais e alertas automatizados.</li>
+                  <li><img src="./assets/images/reactok.png" alt="ok">Acompanhe métricas de mensagens e engajamento em tempo real.</li>
+                </ul>
+              </div>
+            </details>
+
+            <!-- E‑mail -->
+            <details class="faq-item" close>
+              <summary class="faq-question">
+                <div class="faq-item-icon">
+                  <img src="./assets/icons/icons-email.svg" alt="E-mail" class="faq-icon">
+                  E‑mail
+                </div>
+                <span class="faq-arrow"><img src="./assets/icons/CaretDown.svg" alt=""></span>
+              </summary>
+              <div class="faq-answer">
+                <p>
+                  Gerencie seus disparos e recebimentos de e‑mail com automação avançada e rastreamento de aberturas.
+                </p>
+                <ul>
+                  <li><img src="./assets/images/reactok.png" alt="ok">Crie campanhas ilimitadas com segmentação avançada.</li>
+                  <li><img src="./assets/images/reactok.png" alt="ok">Automatize fluxos de nutrição e follow‑up por tempo ou evento.</li>
+                  <li><img src="./assets/images/reactok.png" alt="ok">Monitore taxas de abertura, cliques e conversões.</li>
+                  <li><img src="./assets/images/reactok.png" alt="ok">Integre com CRMs para sincronizar contatos e atividades.</li>
+                </ul>
+              </div>
+            </details>
+
+            <!-- Website -->
+            <details class="faq-item" close>
+              <summary class="faq-question">
+                <div class="faq-item-icon">
+                  <img src="./assets/icons/icons-internet.svg" alt="Website" class="faq-icon">
+                  Website
+                </div>
+                <span class="faq-arrow"><img src="./assets/icons/CaretDown.svg" alt=""></span>
+              </summary>
+              <div class="faq-answer">
+                <p>
+                  Centralize formulários e chat do seu site em um único painel, sem necessidade de vários plugins.
+                </p>
+                <ul>
+                  <li><img src="./assets/images/reactok.png" alt="ok">Instale com um snippet único de JavaScript.</li>
+                  <li><img src="./assets/images/reactok.png" alt="ok">Receba leads e mensagens direto no seu CRM.</li>
+                  <li><img src="./assets/images/reactok.png" alt="ok">Personalize widgets de chat com sua identidade visual.</li>
+                  <li><img src="./assets/images/reactok.png" alt="ok">Analise comportamento de visitantes e taxas de conversão.</li>
+                </ul>
+              </div>
+            </details>
+
+            <!-- SMS -->
+            <details class="faq-item" close>
+              <summary class="faq-question">
+                <div class="faq-item-icon">
+                  <img src="./assets/icons/icons-sms.svg" alt="SMS" class="faq-icon">
+                  SMS
+                </div>
+                <span class="faq-arrow"><img src="./assets/icons/CaretDown.svg" alt=""></span>
+              </summary>
+              <div class="faq-answer">
+                <p>
+                  Envie alertas e notificações via SMS de forma escalável e com alta taxa de entrega.
+                </p>
+                <ul>
+                  <li><img src="./assets/images/reactok.png" alt="ok">Dispare mensagens transacionais em massa.</li>
+                  <li><img src="./assets/images/reactok.png" alt="ok">Configure respostas automáticas por palavras‑chave.</li>
+                  <li><img src="./assets/images/reactok.png" alt="ok">Verifique status de entrega e leituras em tempo real.</li>
+                  <li><img src="./assets/images/reactok.png" alt="ok">Integre com APIs externas e sistemas legados.</li>
+                </ul>
+              </div>
+            </details>
+          </div>
+
+          <!-- Área de texto que será atualizada -->
+          <div class="wrapper-items">
+            <p class="title"></p>
+            <p class="subtitle"></p>
+            <div class="items-container"></div>
+          </div>
+
+          <!-- Área de imagem que será atualizada -->
+          <div class="img-three">
+            <img src="" alt="" id="channel-image">
+          </div>
+    
+          <!-- <div class="img-three">
+            <img src="./assets/images/people.png" alt="pessoa trabalhando">
+          </div> -->
+    
+        </div>
+      </div>
+    </section>
+    
+    <section id="four">
+      <div class="container">
+        <img class="img-desktop" src="./assets/images/arte3-desktop.png" alt="neofluxx">
+
+        <img class="img-mobile" src="./assets/images/arte3-mobile.png" alt="neofluxx">
+
+        <div class="container-title">
+          <h3>Automatize fluxos de trabalho com regras para <span>facilitar o atendimento</span> de seus times</h3>
+
+          <p>Com fluxos de trabalho bem estruturados, sua equipe resolve mais com menos, sem perder a qualidade no atendimento.</p>
+        </div>
+
+        <div class="items-container">
+
+          <div class="item">
+            <img src="./assets/icons/rectok.svg" alt="Ganhe tempo de gestão, elimine a desorganização">
+            <p>Ganhe tempo de gestão, elimine a desorganização</p>
+          </div>
+        
+          <div class="item">
+            <img src="./assets/icons/rectok.svg" alt="Implementação simples com resultados rápidos">
+            <p>Implementação simples com resultados rápidos</p>
+          </div>
+        
+          <div class="item">
+            <img src="./assets/icons/rectok.svg" alt="Automação sob medida para suas necessidades">
+            <p>Automação sob medida para suas necessidades</p>
+          </div>
+        
+          <div class="item">
+            <img src="./assets/icons/rectok.svg"
+              alt="Controle total sobre quando a automação entra em ação">
+            <p>Controle total sobre quando a automação entra em ação</p>
+          </div>
+        
+        </div>
+
+      </div>
+    </section>
+
+    <section id="five">
+      <div class="container">
+
+        <div class="blur-wrapper">
+          <div class="g1"></div>
+          <img src="./assets/images/arte4-desktop.png" alt="">
+        </div>
+
+        <h3>Conecte-se a sistemas externos e amplie o <span>Neofluxx</span></h3>
+
+        <p>Com conexões simples e rápidas, amplie as capacidades do seu sistema, alinhando fluxos e melhorando a gestão de dados.</p>
+
+        <div class="items-container">
+
+          <div class="item">
+            <img src="./assets/icons/rectok.svg" alt="Conecte seu CRM e centralize informações em tempo real">
+            <p>Conecte seu CRM e centralize informações em tempo real</p>
+          </div>
+        
+          <div class="item">
+            <img src="./assets/icons/rectok.svg" alt="Simplifique a gestão com integração ao ERP">
+            <p>Simplifique a gestão com integração ao ERP</p>
+          </div>
+        
+          <div class="item">
+            <img src="./assets/icons/rectok.svg" alt="Automatize com Google e ganhe eficiência">
+            <p>Automatize com Google e ganhe eficiência</p>
+          </div>
+        
+          <div class="item">
+            <img src="./assets/icons/rectok.svg"
+              alt="Amplie as funcionalidades com WebHooks, Translator e OpenAI">
+            <p>Amplie as funcionalidades com WebHooks, Translator e OpenAI</p>
+          </div>
+        
+        </div>
+      </div>
+    </section>
+
+    <section id="six">
+      <div class="container">
+        
+        <img class="img-desktop" src="./assets/images/arte5-desktop.png" alt="neofluxx">
+
+         <img class="img-mobile" src="./assets/images/arte5-mobile.png" alt="neofluxx">
+
+        <div class="wrapper">
+          <div class="wrapper-items">
+            <p class="title">Atendentes usando o <span>mesmo sistema</span> simultaneamente.</p>
+            <p class="subtitle">Um sistema integrado para todos trabalharem juntos, com respostas rápidas e uma experiência consistente para seus clientes.</p>
+            <div class="items-container">
+              <div class="item">
+                <img src="./assets/icons/rectok.svg" alt="Tudo em um só lugar para facilitar sua gestão">
+                <p>Tudo em um só lugar para facilitar sua gestão</p>
+              </div>
+
+              <div class="item">
+                <img src="./assets/icons/rectok.svg" alt="Automatize processos e economize tempo">
+                <p>Automatize processos e economize tempo</p>
+              </div>
+
+              <div class="item">
+                <img src="./assets/icons/rectok.svg" alt="Direcione atendimentos para o profissional mais indicado">
+                <p>Direcione atendimentos para o profissional mais indicado</p>
+              </div>
+              
+              <div class="item">
+                <img src="./assets/icons/rectok.svg" alt="Produtividade máxima para a sua equipe">
+                <p>Produtividade máxima para a sua equipe</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="seven">
+      <div class="container">
+
+        <div class="wrapper">
+          <div class="wrapper-items">
+            <p class="title">Atendimento integrado para leads de <span>redes sociais.</span></p>
+            <p class="subtitle">Simplifique sua gestão e potencialize os resultados das campanhas em todas as plataformas.</p>
+            <div class="items-container">
+              <div class="item">
+               <div>
+                 <img src="./assets/icons/rectok.svg" alt="Mais leads do instagram">
+                <p>Mais leads do instagram</p>
+               </div>
+                <p>Impulsione suas interações e converta seguidores em potenciais clientes de forma eficaz</p>
+              </div>
+
+              <div class="item">
+                <div>
+                  <img src="./assets/icons/rectok.svg" alt="Mais Leads do Facebook">
+                  <p>Mais Leads do Facebook</p>
+                </div>
+                <p>Amplie seu alcance e transforme curtidas e comentários em oportunidades reais de negócios</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+        <img class="img-seven" src="./assets/images/arte6-desktop.png" alt="">
+      </div>
+    </section>
+
+    <section id="eight">
+      <div class="container">
+        <div>
+          <h3>Experiência que gera <br> <span>lealdade</span> e receita</h3>
+          <p class="subtitle">Clientes utilizam o canal que preferem; sua equipe recebe contexto completo, aumentando a resolução no primeiro contato e as vendas cruzadas. Negócios que adotam essa abordagem criam consumidores fãs, não apenas satisfeitos.</p>
+          <button type="button" id="open-demo" class="btn open-demo">Ver agente em ação</button>
+        </div>
+
+        <div class="img-eight">
+          <img class="img-balon" src="./assets/images/balon.png" alt="suporte do sistema neofluxx">
+          <img src="./assets/images/people2.png" alt="pessoa segurando notebook acessando sistema neofluxx">
+        </div>
+      </div>
+    </section>
+
+    <section id="nine">
+      <div class="container">
+        <h2>Pronto para wow?</h2>
+        
+        <p class="subtitle">Descubra como a Neofluxx unifica engajamento e automação em uma solução que simplesmente funciona.</p>
+
+        <button type="button" id="open-demo" class="btn open-demo"> Solicitar demonstração </button>
+      </div>
+    </section>
+  </main>
+  
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="container">
+
+      <ul>
+        <li>
+          <p>Endereço: </p>
+          <p>Level 1, 12 Sample St, Sydney NSW 2000</p>
+        </li>
+      
+        <li>
+          <p>Contato: </p>
+          <p>(xx) xxxx-xxxx</p>
+          <p>email@neofluxx.com</p>
+        </li>
+      
+        <li>
+          <p>CNPJ: </p>
+          <p>0000-00000-0000-00-0000</p>
+        </li>
+      
+      
+        <li>
+          <p>Redes sociais: </p>
+          <ul class="rede-social-footer">
+            <li><img src="./assets/icons/FacebookLogo.svg" alt="facebook"></li>
+            <li><img src="./assets/icons/InstagramLogo.svg" alt="instagram"></li>
+            <li><img src="./assets/icons/XLogo.svg" alt="X - Antigo twitter"></li>
+            <li><img src="./assets/icons/LinkedinLogo.svg" alt="linkedin"></li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="footer-logo">
+        <img src="./assets/images/logo-footer.png" alt="logo neofluxx">
+         <p>© <script>document.write(new Date().getFullYear());</script> Neofluxx. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="./js/main.js"></script>
+</body>
+</html>
