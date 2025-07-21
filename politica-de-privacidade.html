@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Política de Privacidade - Neofluxx</title>
+  <link rel="canonical" href="https://neofluxx.com/politica-de-privacidade" />
+  <meta name="keywords" content="neofluxx,política de privacidade,lgpd,proteção de dados,privacidade,cookies">
+  <meta name="robots" content="index, follow">
+  <meta name="description" content="Política de Privacidade da Neofluxx Tecnologia. Saiba como tratamos seus dados pessoais em conformidade com a LGPD.">
+
+  <link rel="icon" href="./assets/icons/favicon.svg" />
+  
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Política de Privacidade - Neofluxx">
+  <meta property="og:description" content="Política de Privacidade da Neofluxx Tecnologia. Saiba como tratamos seus dados pessoais em conformidade com a LGPD.">
+  <meta property="og:url" content="https://neofluxx.com/politica-de-privacidade">
+  <meta property="og:image" content="https://neofluxx.com/assets/images/neofluxx-simbolo.jpg" />
+  <meta property="og:site_name" content="Neofluxx - Inteligência que conecta" />
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+
+  <link rel="stylesheet" href="css/styles.css">
+
+  <style>
+    /* Estilos específicos para a página de política de privacidade */
+    .privacy-hero {
+      padding: 134px 0 80px 0;
+      text-align: center;
+    }
+    
+    .privacy-hero h1 {
+      margin-bottom: 16px;
+    }
+    
+    .privacy-hero .subtitle {
+      color: #B5B9A8;
+      font-size: 1.25rem;
+      margin-bottom: 24px;
+    }
+    
+    .privacy-dates {
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+      margin-top: 32px;
+    }
+    
+    .privacy-dates div {
+      background: #0D2616;
+      padding: 16px 24px;
+      border-radius: 8px;
+      border-left: 4px solid #00DD7D;
+    }
+    
+    .privacy-dates p {
+      font-size: 0.875rem;
+      color: #B5B9A8;
+      margin: 0;
+    }
+    
+    .privacy-dates strong {
+      color: #FFF9E9;
+      font-weight: 600;
+    }
+    
+    .privacy-content {
+      padding: 80px 0;
+    }
+    
+    .privacy-wrapper {
+      display: flex;
+      gap: 48px;
+      align-items: flex-start;
+    }
+    
+    .privacy-nav {
+      min-width: 280px;
+      position: sticky;
+      top: 100px;
+      background: #0D2616;
+      border-radius: 12px;
+      padding: 24px;
+    }
+    
+    .privacy-nav h3 {
+      font-size: 1.125rem;
+      margin-bottom: 16px;
+      color: #00DD7D;
+    }
+    
+    .privacy-nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .privacy-nav li {
+      margin-bottom: 8px;
+    }
+    
+    .privacy-nav a {
+      color: #B5B9A8;
+      font-size: 0.875rem;
+      text-decoration: none;
+      display: block;
+      padding: 8px 12px;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+    }
+    
+    .privacy-nav a:hover {
+      background: #193022;
+      color: #00DD7D;
+    }
+    
+    .privacy-main {
+      flex: 1;
+      max-width: 800px;
+    }
+    
+    .privacy-section {
+      margin-bottom: 48px;
+      padding-bottom: 32px;
+      border-bottom: 1px solid rgba(181, 185, 168, 0.1);
+    }
+    
+    .privacy-section:last-child {
+      border-bottom: none;
+    }
+    
+    .privacy-section h2 {
+      color: #00DD7D;
+      font-size: 1.5rem;
+      margin-bottom: 24px;
+      padding-top: 20px;
+    }
+    
+    .privacy-section h3 {
+      color: #FFF9E9;
+      font-size: 1.25rem;
+      margin: 24px 0 16px 0;
+    }
+    
+    .privacy-section h4 {
+      color: #00DD7D;
+      font-size: 1.125rem;
+      margin: 20px 0 12px 0;
+    }
+    
+    .privacy-section p {
+      color: #B5B9A8;
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 16px;
+      text-align: justify;
+    }
+    
+    .privacy-section ul {
+      margin: 16px 0;
+      padding-left: 24px;
+    }
+    
+    .privacy-section li {
+      color: #B5B9A8;
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 8px;
+      list-style-type: disc;
+    }
+    
+    .privacy-section ol {
+      margin: 16px 0;
+      padding-left: 24px;
+    }
+    
+    .privacy-section ol li {
+      color: #B5B9A8;
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 8px;
+      list-style-type: decimal;
+    }
+    
+    .privacy-section strong {
+      color: #FFF9E9;
+      font-weight: 600;
+    }
+    
+    .dpo-highlight {
+      background: #0D2616;
+      border: 1px solid #00DD7D;
+      border-radius: 8px;
+      padding: 24px;
+      margin: 32px 0;
+      text-align: center;
+    }
+    
+    .dpo-highlight h3 {
+      color: #00DD7D;
+      margin-bottom: 16px;
+    }
+    
+    .dpo-highlight p {
+      margin: 8px 0;
+    }
+    
+    .dpo-highlight a {
+      color: #00DD7D;
+      font-weight: 600;
+    }
+    
+    .back-to-top {
+      position: fixed;
+      bottom: 32px;
+      right: 32px;
+      background: #00DD7D;
+      color: #013B15;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.25rem;
+      font-weight: bold;
+      transition: all 0.3s ease;
+      z-index: 1000;
+    }
+    
+    .back-to-top:hover {
+      background: #016624;
+      color: #FFF9E9;
+      transform: translateY(-2px);
+    }
+    
+    @media screen and (max-width: 960px) {
+      .privacy-dates {
+        flex-direction: column;
+        gap: 16px;
+      }
+      
+      .privacy-wrapper {
+        flex-direction: column;
+        gap: 32px;
+      }
+      
+      .privacy-nav {
+        position: static;
+        min-width: auto;
+        order: 2;
+      }
+      
+      .privacy-main {
+        order: 1;
+      }
+      
+      .privacy-hero {
+        padding: 100px 0 60px 0;
+      }
+      
+      .privacy-content {
+        padding: 60px 0;
+      }
+      
+      .back-to-top {
+        bottom: 16px;
+        right: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header / Navegação -->
+  <header id="header">
+    <div class="header-wrapper"> 
+      <div id="header-inner" class="header-inner">
+
+        <div class="container">
+          
+          <a href="/">
+            <img src="./assets/images/logo.png" alt="logo neofluxx">
+          </a>
+
+          <!-- 1. Checkbox que guarda o estado (oculto) -->
+          <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+
+          <label for="menu-toggle" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+
+          <nav class="nav">
+            <ul>
+              <li><a href="/">Início</a></li>
+              <li><a href="/#two">Funcionalidades</a></li>
+              <li><a href="https://calendly.com/sergiopironato">Preços</a></li>
+              <li class="nav-login-li"><a href=""><span><img src="./assets/icons/user.svg" alt="login"></span> Login</a></li>
+              <li> <button type="button" id="open-demo" class="btn open-demo"> Solicitar demonstração </button> </li>
+            </ul>
+          </nav>
+
+          <!-- Menu mobile full‑screen -->
+          <nav id="mobile-menu" class="mobile-menu">
+
+            <div class="mobile-header-nav">
+              <button type="button" class="close-menu" id="btn-close" aria-label="Fechar menu">
+                <img style="width: 24px;" src="./assets/icons/CarteLeftGray.svg" alt="fechar menu">
+              </button>
+
+              <div>
+                <a href="/">
+                <img src="./assets/images/logo.png" alt="logo neofluxx">
+                </a>
+              </div>
+
+              <div></div>
+            </div>
+
+            <ul class="mobile-menu-list">
+              <div class="-list-header">
+                <li><a href="">Login</a></li>
+                <hr>
+                <li><a href="/">Início</a></li>
+                <li><a href="/#two">Funcionalidades</a></li>
+              </div>
+
+              <div class="-list-footer">
+                <li class="button-li"><button type="button" class="btn open-demo">Solicitar demonstração</button></li>
+              </div>
+
+            </ul>
+          </nav>
+          
+
+        </div>
+
+      </div>
+    </div>
+    
+  </header>
+
+  <!-- Hero Section -->
+  <section class="privacy-hero">
+    <div class="container">
+      <h1>Política de Privacidade</h1>
+      <p class="subtitle">Neofluxx Tecnologia</p>
+      
+      <div class="privacy-dates">
+        <div>
+          <p><strong>Vigência:</strong></p>
+          <p>A partir de 16 de julho de 2025</p>
+        </div>
+        <div>
+          <p><strong>Última atualização:</strong></p>
+          <p>16 de julho de 2025</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal de Solicitação -->
+  <dialog id="demo-dialog" class="demo-dialog">
+    <form method="dialog" class="demo-form">
+      <button type="button" class="close-btn" id="close-demo" aria-label="Fechar">
+        <img src="./assets/icons/close.svg" alt="fechar">
+      </button>
+      <h2>Solicitação de demonstração</h2>
+
+      <p>Transforme cada conversa em valor de negócio com a plataforma omnichannel e automação de processos da Neofluxx.</p>
+
+      <label for="demo-name">Nome *</label>
+      <input type="text" id="demo-name" name="name" placeholder="Digite seu nome completo" required />
+
+      <label for="demo-email">E-mail *</label>
+      <input type="email" id="demo-email" name="email" placeholder="seu@email.com" required />
+
+      <label for="demo-whatsapp">WhatsApp *</label>
+      <input type="tel" id="demo-whatsapp" name="whatsapp" placeholder="(11) 99999-9999" required />
+
+      <label class="checkbox-label">
+        <input type="checkbox" id="demo-agree" name="agree" required />
+        Li e aceito os termos
+      </label>
+
+      <button type="submit" id="open-demo" class="btn submit-btn">
+        Solicitar demonstração
+      </button>
+    </form>
+  </dialog>
+
+  <!-- Main Content -->
+  <main class="privacy-content">
+    <div class="container">
+      <div class="privacy-wrapper">
+        
+        <!-- Navegação lateral -->
+        <nav class="privacy-nav">
+          <h3>Navegação</h3>
+          <ul>
+            <li><a href="#secao-a">A. Dados dos Visitantes do Site</a></li>
+            <li><a href="#secao-a1">A.1. Dados coletados</a></li>
+            <li><a href="#secao-a2">A.2. Proibição de menores</a></li>
+            <li><a href="#secao-a3">A.3. Finalidades do tratamento</a></li>
+            <li><a href="#secao-a4">A.4. Bases legais</a></li>
+            <li><a href="#secao-a5">A.5. Compartilhamento</a></li>
+            <li><a href="#secao-a6">A.6. Cookies</a></li>
+            <li><a href="#secao-a7">A.7. Do Not Track</a></li>
+            <li><a href="#secao-a8">A.8. Incidentes de segurança</a></li>
+            <li><a href="#secao-a9">A.9. Retenção de dados</a></li>
+            <li><a href="#secao-a10">A.10. Transferência internacional</a></li>
+            <li><a href="#secao-a11">A.11. Práticas globais</a></li>
+            <li><a href="#secao-b">B. Dados dos Usuários da Plataforma</a></li>
+            <li><a href="#secao-b1">B.1. Dados coletados</a></li>
+            <li><a href="#secao-b2">B.2. Finalidades</a></li>
+            <li><a href="#secao-b3">B.3. Bases legais</a></li>
+            <li><a href="#secao-b4">B.4. Compartilhamento</a></li>
+            <li><a href="#secao-b5">B.5. Retenção</a></li>
+            <li><a href="#secao-b6">B.6. Direitos dos titulares</a></li>
+            <li><a href="#secao-b7">B.7. Transferência internacional</a></li>
+            <li><a href="#secao-b8">B.8. Medidas de segurança</a></li>
+            <li><a href="#secao-b9">B.9. Encarregado (DPO)</a></li>
+          </ul>
+        </nav>
+
+        <!-- Conteúdo principal -->
+        <div class="privacy-main">
+          
+          <section id="secao-a" class="privacy-section">
+            <h2>A. Tratamento de Dados dos Visitantes do Site</h2>
+            
+            <section id="secao-a1">
+              <h3>A.1. Dados coletados</h3>
+              <p>Quando você acessa o site institucional da Neofluxx, podemos coletar as seguintes informações:</p>
+              <ul>
+                <li>Endereço de IP e dados de conexão, para diagnóstico de problemas técnicos e análise de tráfego.</li>
+                <li>Dados de navegação, como páginas visitadas, tempo de permanência e duração da sessão.</li>
+                <li>Informações fornecidas em formulários de contato, incluindo nome, e-mail, telefone e demais campos que você preencher voluntariamente.</li>
+                <li>Dados de cookies e tecnologias semelhantes, conforme detalhado em A.6.</li>
+              </ul>
+            </section>
+
+            <section id="secao-a2">
+              <h3>A.2. Proibição de registro de menores de idade</h3>
+              <p>O site e a Plataforma não são destinados a menores de 16 anos. Caso identifiquemos registro ou uso não autorizado por menores, poderemos encerrar a conta ou excluir os dados correspondentes.</p>
+            </section>
+
+            <section id="secao-a3">
+              <h3>A.3. Finalidades do tratamento</h3>
+              <p>Utilizamos os dados dos visitantes para:</p>
+              <ol>
+                <li>Atendimento de solicitações feitas por meio de formulários de contato, permitindo responder dúvidas e orçamentos;</li>
+                <li>Envio de comunicações comerciais e institucionais, como newsletters e atualizações de produtos, caso você tenha optado por recebê-las;</li>
+                <li>Análise e melhoria da experiência de navegação, identificando pontos de melhoria e personalizando conteúdos;</li>
+                <li>Remarketing e segmentação de campanhas, exibindo anúncios relevantes em plataformas externas.</li>
+              </ol>
+            </section>
+
+            <section id="secao-a4">
+              <h3>A.4. Bases legais</h3>
+              <p>O tratamento dos dados pessoais dos visitantes fundamenta-se na LGPD, artigo 7º:</p>
+              <ul>
+                <li><strong>Consentimento (I):</strong> uso de cookies não essenciais e envio de comunicações comerciais;</li>
+                <li><strong>Execução de contrato ou procedimentos pré-contratuais (V):</strong> atendimento de solicitações via formulário;</li>
+                <li><strong>Legítimo interesse (IX):</strong> análises estatísticas de tráfego e melhorias na plataforma.</li>
+              </ul>
+            </section>
+
+            <section id="secao-a5">
+              <h3>A.5. Compartilhamento com terceiros</h3>
+              <p>Podemos compartilhar seus dados com prestadores de serviço sob contratos de confidencialidade, tais como:</p>
+              <ul>
+                <li>Ferramentas de análise de tráfego (por exemplo, Google Analytics);</li>
+                <li>Plataformas de e-mail marketing (Mailchimp, SendGrid);</li>
+                <li>Provedores de infraestrutura e CDN (AWS, Cloudflare, Hetzner);</li>
+                <li>Outros subprocessadores, sempre em conformidade com a LGPD.</li>
+              </ul>
+            </section>
+
+            <section id="secao-a6">
+              <h3>A.6. Uso de cookies e tecnologias semelhantes</h3>
+              <p>O site utiliza cookies e tecnologias de rastreamento, categorizados como:</p>
+              <ul>
+                <li><strong>Estritamente necessários:</strong> para funcionamento do site;</li>
+                <li><strong>Desempenho e análise:</strong> para estatísticas de uso;</li>
+                <li><strong>Marketing:</strong> para anúncios personalizados.</li>
+              </ul>
+              <p>No primeiro acesso, exibimos um banner que informa as categorias de cookies e permite que você ajuste suas preferências ou recuse determinados tipos, sem prejuízo às funções essenciais.</p>
+            </section>
+
+            <section id="secao-a7">
+              <h3>A.7. Respeito ao cabeçalho "Do Not Track" (DNT)</h3>
+              <p>Quando seu navegador envia o cabeçalho HTTP "DNT:1", não realizamos coleta de dados de navegação para fins de análise de desempenho ou marketing em terceiros, respeitando sua preferência de privacidade.</p>
+            </section>
+
+            <section id="secao-a8">
+              <h3>A.8. Notificação de incidentes de segurança</h3>
+              <p>Em caso de incidente de segurança que possa causar risco ou dano relevante aos titulares de dados, a Neofluxx notificará os afetados e a Autoridade Nacional de Proteção de Dados (ANPD) em até 72 horas após a identificação do incidente, detalhando a natureza dos dados comprometidos, as possíveis consequências e as medidas corretivas adotadas.</p>
+            </section>
+
+            <section id="secao-a9">
+              <h3>A.9. Retenção de dados</h3>
+              <ul>
+                <li><strong>Logs de acesso e cookies:</strong> até 12 meses;</li>
+                <li><strong>Dados de formulários e consentimento:</strong> até 5 anos ou enquanto houver relação comercial;</li>
+                <li><strong>Dados agregados anonimizados:</strong> enquanto necessários para análises.</li>
+              </ul>
+              <p>Ao término dos prazos, excluímos ou anonimizamos dados pessoalmente identificáveis, salvo exigência legal.</p>
+            </section>
+
+            <section id="secao-a10">
+              <h3>A.10. Transferência internacional de dados</h3>
+              <p>Alguns provedores estão fora do Brasil (por exemplo, Hetzner e AWS nos EUA). Transferências seguem salvaguardas da LGPD, como cláusulas padrão contratuais e contratos de processamento que garantem proteção equivalente à lei brasileira.</p>
+            </section>
+
+            <section id="secao-a11">
+              <h3>A.11. Práticas globais de privacidade</h3>
+              <p>A Neofluxx adota os seguintes princípios em todos os tratamentos de dados:</p>
+              <ul>
+                <li><strong>Minimização:</strong> coletamos somente o estritamente necessário;</li>
+                <li><strong>Transparência:</strong> informamos de forma clara como e por que usamos seus dados;</li>
+                <li><strong>Responsabilização:</strong> mantemos registro de processos e políticas de segurança;</li>
+                <li><strong>Segurança:</strong> aplicamos controles técnicos e organizacionais para proteção de dados;</li>
+                <li><strong>Controle pelo titular:</strong> oferecemos canais e ferramentas para que você gerencie suas preferências e direitos.</li>
+              </ul>
+              
+              <h4>Dados não coletados</h4>
+              <ul>
+                <li>Não coletamos dados sensíveis (como origens raciais, crenças religiosas, dados genéticos ou de saúde) exceto se voluntariamente fornecidos para fins específicos;</li>
+                <li>Não coletamos número de CPF, RG ou informações financeiras além das necessárias para faturamento, quando aplicável;</li>
+                <li>Não associamos perfis de crianças ou menores de idade, conforme A.2.</li>
+              </ul>
+            </section>
+          </section>
+
+          <section id="secao-b" class="privacy-section">
+            <h2>B. Tratamento de Dados dos Usuários da Plataforma SaaS</h2>
+            
+            <section id="secao-b1">
+              <h3>B.1. Dados coletados</h3>
+              <p>Coletamos, no cadastro e uso da Plataforma:</p>
+              <ul>
+                <li><strong>Dados cadastrais e de perfil:</strong> nome completo, e-mail corporativo, CNPJ, cargo;</li>
+                <li><strong>Credenciais de acesso:</strong> nome de usuário e senha (armazenados de forma segura);</li>
+                <li><strong>Logs de uso e eventos:</strong> data, hora, IP de acesso, ações realizadas e registros de auditoria;</li>
+                <li><strong>Conteúdos e conversas:</strong> mensagens via chat/bots, metadados de integrações;</li>
+                <li><strong>Dados de faturamento:</strong> informações de pagamento, histórico de faturas e comprovantes.</li>
+              </ul>
+            </section>
+
+            <section id="secao-b2">
+              <h3>B.2. Finalidades do tratamento</h3>
+              <p>Utilizamos esses dados para:</p>
+              <ol>
+                <li>Execução do contrato de serviço, incluindo autenticação, autorização e faturamento;</li>
+                <li>Suporte técnico, diagnóstico e resolução de incidentes;</li>
+                <li>Monitoramento e melhoria da Plataforma, com análises estatísticas e treinamento de IA;</li>
+                <li>Comunicações sobre o serviço, como notificações de manutenção, atualizações e alertas de segurança.</li>
+              </ol>
+            </section>
+
+            <section id="secao-b3">
+              <h3>B.3. Bases legais</h3>
+              <p>O tratamento apoia-se na LGPD, artigo 7º:</p>
+              <ul>
+                <li><strong>Execução de contrato ou procedimentos pré-contratuais (V);</strong></li>
+                <li><strong>Obrigação legal ou regulatória (II),</strong> para retenção fiscal;</li>
+                <li><strong>Consentimento (I),</strong> quando aplicável a funcionalidades específicas;</li>
+                <li><strong>Legítimo interesse (IX),</strong> para segurança e prevenção a fraudes, sem sobrepor direitos do titular.</li>
+              </ul>
+            </section>
+
+            <section id="secao-b4">
+              <h3>B.4. Compartilhamento com terceiros</h3>
+              <p>Subprocessadores incluem:</p>
+              <ul>
+                <li>Cloudflare e Hetzner, para hospedagem e proteção;</li>
+                <li>N8N, para automação de fluxos;</li>
+                <li>SendGrid, para envio de e-mails transacionais;</li>
+                <li>Outros fornecedores (a serem listados posteriormente), todos sob contratos de proteção de dados.</li>
+              </ul>
+            </section>
+
+            <section id="secao-b5">
+              <h3>B.5. Retenção de dados</h3>
+              <ul>
+                <li><strong>Dados cadastrais:</strong> enquanto vigente o contrato e por 5 anos após término;</li>
+                <li><strong>Logs de acesso e uso:</strong> até 12 meses;</li>
+                <li><strong>Conversas e conteúdos:</strong> até 12 meses após término do serviço;</li>
+                <li><strong>Dados de faturamento:</strong> conforme legislação fiscal (mínimo de 5 anos).</li>
+              </ul>
+            </section>
+
+            <section id="secao-b6">
+              <h3>B.6. Direitos dos titulares</h3>
+              <p>Você pode exercer seus direitos de acesso, correção, eliminação, portabilidade e oposição pelo e-mail: <a href="mailto:dpo@neofluxx.com">dpo@neofluxx.com</a></p>
+              <p>Responderemos em até 15 dias, conforme prazos legais.</p>
+            </section>
+
+            <section id="secao-b7">
+              <h3>B.7. Transferência internacional de dados</h3>
+              <p>Conforme A.10, servidores fora do Brasil (Hetzner e AWS/EUA) e transferências regidas por salvaguardas da LGPD.</p>
+            </section>
+
+            <section id="secao-b8">
+              <h3>B.8. Medidas de segurança</h3>
+              <p>Aplicamos:</p>
+              <ul>
+                <li>Criptografia TLS em trânsito e em repouso;</li>
+                <li>Testes de penetração e avaliações de vulnerabilidade;</li>
+                <li>Controles de acesso e autenticação multifator;</li>
+                <li>Auditorias internas e cumprimento futuro de certificações.</li>
+              </ul>
+            </section>
+
+            <section id="secao-b9">
+              <h3>B.9. Encarregado (DPO)</h3>
+              
+              <div class="dpo-highlight">
+                <h3>Encarregado de Proteção de Dados</h3>
+                <p><strong>Rafael Alcarde Martins</strong></p>
+                <p>E-mail: <a href="mailto:dpo@neofluxx.com">dpo@neofluxx.com</a></p>
+              </div>
+            </section>
+          </section>
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Botão voltar ao topo -->
+  <button class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" title="Voltar ao topo">
+    ↑
+  </button>
+  
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="container">
+
+      <ul>
+        <li>
+          <p>Endereço: </p>
+          <p>Av Paulista Nº 1636 - Cj 03 - 1º andar - Salas 103 E 105</p>
+          <p>Bela Vista - CEP: 01310-200 - São Paulo - SP</p>
+        </li>
+        <li>
+          <p>Contato: </p>
+          <p>contato@neofluxx.com</p>
+        </li>
+        <li>
+          <p>CNPJ: </p>
+          <p>61.806.245/0001-03</p>
+        </li>
+        <li>
+          <p>Legal: </p>
+          <p><a href="/politica-de-privacidade.html" class="footer-legal-links">Política de Privacidade</a></p>
+          <p><a href="/termos-de-servico.html" class="footer-legal-links">Termos de Serviço</a></p>
+        </li>
+        <li>
+          <p>Redes sociais: </p>
+          <ul class="rede-social-footer">
+            <li><img src="./assets/icons/FacebookLogo.svg" alt="facebook"></li>
+            <li><img src="./assets/icons/InstagramLogo.svg" alt="instagram"></li>
+            <li><img src="./assets/icons/XLogo.svg" alt="X - Antigo twitter"></li>
+            <li><img src="./assets/icons/LinkedinLogo.svg" alt="linkedin"></li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="footer-logo">
+        <img src="./assets/images/logo-footer.png" alt="logo neofluxx">
+         <p>© <script>document.write(new Date().getFullYear());</script> Neofluxx. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="./js/main.js"></script>
+</body>
+</html>

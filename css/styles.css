@@ -769,6 +769,19 @@ footer#footer .container .footer-logo p {
   font-size: 0.625rem !important;
   color: #B5B9A8;
 }
+
+/* Classe específica para links legais no rodapé */
+.footer-legal-links {
+  font-size: 0.875rem !important;
+  color: #B5B9A8 !important;
+  font-weight: 400 !important;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-legal-links:hover {
+  color: #00DD7D !important;
+}
 footer#footer::after {
   content: "";
   width: 100%;
