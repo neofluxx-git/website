@@ -292,3 +292,178 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
+// API Demo Request - Solicitação de demonstração
+document.addEventListener('DOMContentLoaded', () => {
+  const demoForm = document.querySelector('.demo-form');
+  const submitBtn = document.querySelector('.submit-btn');
+  const dialog = document.getElementById('demo-dialog');
+  
+  if (demoForm && submitBtn) {
+    // Função para validar email
+    function validateEmail(email) {
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return emailRegex.test(email);
+    }
+    
+    // Função para validar WhatsApp (11 dígitos)
+    function validateWhatsApp(phone) {
+      const numbers = phone.replace(/\D/g, '');
+      return numbers.length === 11;
+    }
+    
+    // Função para mostrar mensagem de feedback
+    function showMessage(message, type = 'success') {
+      // Remove mensagem anterior se existir
+      const existingMessage = demoForm.querySelector('.feedback-message');
+      if (existingMessage) {
+        existingMessage.remove();
+      }
+      
+      // Cria nova mensagem
+      const messageDiv = document.createElement('div');
+      messageDiv.className = `feedback-message ${type}`;
+      messageDiv.style.cssText = `
+        padding: 12px;
+        margin: 10px 0;
+        border-radius: 4px;
+        font-size: 14px;
+        text-align: center;
+        ${type === 'success' ? 
+          'background-color: #d4edda; color: #155724; border: 1px solid #c3e6cb;' : 
+          'background-color: #f8d7da; color: #721c24; border: 1px solid #f5c6cb;'
+        }
+      `;
+      messageDiv.textContent = message;
+      
+      // Insere a mensagem antes do botão
+      submitBtn.parentNode.insertBefore(messageDiv, submitBtn);
+      
+      // Remove a mensagem após 5 segundos
+      setTimeout(() => {
+        if (messageDiv.parentNode) {
+          messageDiv.remove();
+        }
+      }, 5000);
+    }
+    
+    // Função para fazer a chamada à API
+    async function submitDemoRequest(formData) {
+      try {
+        const response = await fetch('https://demo-solicitation-neofluxx.neofluxx01.workers.dev/', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'x-api-key': '123456'
+          },
+          body: JSON.stringify(formData)
+        });
+        
+        if (!response.ok) {
+          throw new Error(`Erro na requisição: ${response.status}`);
+        }
+        
+        const result = await response.json();
+        return { success: true, data: result };
+        
+      } catch (error) {
+        console.error('Erro ao enviar solicitação:', error);
+        return { success: false, error: error.message };
+      }
+    }
+    
+    // Event listener para o submit do formulário
+    demoForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      
+      // Captura os valores dos campos
+      const nameInput = document.getElementById('demo-name');
+      const emailInput = document.getElementById('demo-email');
+      const whatsappInput = document.getElementById('demo-whatsapp');
+      const agreeCheckbox = document.getElementById('demo-agree');
+      
+      const name = nameInput.value.trim();
+      const email = emailInput.value.trim();
+      const whatsapp = whatsappInput.value.trim();
+      const agreed = agreeCheckbox.checked;
+      
+      // Validações
+      if (!name) {
+        showMessage('Por favor, preencha seu nome.', 'error');
+        nameInput.focus();
+        return;
+      }
+      
+      if (!email) {
+        showMessage('Por favor, preencha seu e-mail.', 'error');
+        emailInput.focus();
+        return;
+      }
+      
+      if (!validateEmail(email)) {
+        showMessage('Por favor, insira um e-mail válido.', 'error');
+        emailInput.focus();
+        return;
+      }
+      
+      if (!whatsapp) {
+        showMessage('Por favor, preencha seu WhatsApp.', 'error');
+        whatsappInput.focus();
+        return;
+      }
+      
+      if (!validateWhatsApp(whatsapp)) {
+        showMessage('Por favor, insira um número de WhatsApp válido (11 dígitos).', 'error');
+        whatsappInput.focus();
+        return;
+      }
+      
+      if (!agreed) {
+        showMessage('Por favor, aceite os termos para continuar.', 'error');
+        agreeCheckbox.focus();
+        return;
+      }
+      
+      // Prepara os dados para envio
+      const formData = {
+        nome: name,
+        email: email,
+        phone: whatsapp.replace(/\D/g, '') // Remove formatação, envia apenas números
+      };
+      
+      // Estado de loading
+      const originalText = submitBtn.textContent;
+      submitBtn.textContent = 'Enviando...';
+      submitBtn.disabled = true;
+      submitBtn.style.opacity = '0.7';
+      
+      try {
+        // Faz a chamada à API
+        const result = await submitDemoRequest(formData);
+        
+        if (result.success) {
+          showMessage('Solicitação enviada com sucesso! Entraremos em contato em breve.', 'success');
+          
+          // Limpa o formulário
+          demoForm.reset();
+          
+          // Fecha o modal após 2 segundos
+          setTimeout(() => {
+            dialog.close();
+          }, 2000);
+          
+        } else {
+          showMessage('Erro ao enviar solicitação. Tente novamente.', 'error');
+        }
+        
+      } catch (error) {
+        showMessage('Erro de conexão. Verifique sua internet e tente novamente.', 'error');
+      } finally {
+        // Restaura o estado do botão
+        submitBtn.textContent = originalText;
+        submitBtn.disabled = false;
+        submitBtn.style.opacity = '1';
+      }
+    });
+  }
+});
