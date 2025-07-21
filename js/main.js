@@ -212,3 +212,83 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.classList.remove('no-scroll');
   });
 });
+
+// Máscara para campo de WhatsApp
+document.addEventListener('DOMContentLoaded', () => {
+  const whatsappInput = document.getElementById('demo-whatsapp');
+  
+  if (whatsappInput) {
+    // Função para aplicar a máscara de telefone
+    function applyPhoneMask(value) {
+      // Remove tudo que não é dígito
+      const numbers = value.replace(/\D/g, '');
+      
+      // Aplica a máscara baseada na quantidade de dígitos
+      if (numbers.length <= 2) {
+        return `(${numbers}`;
+      } else if (numbers.length <= 7) {
+        return `(${numbers.slice(0, 2)}) ${numbers.slice(2)}`;
+      } else {
+        return `(${numbers.slice(0, 2)}) ${numbers.slice(2, 7)}-${numbers.slice(7, 11)}`;
+      }
+    }
+    
+    // Função para validar o número de WhatsApp
+    function validateWhatsApp(value) {
+      const numbers = value.replace(/\D/g, '');
+      return numbers.length === 11;
+    }
+    
+    // Event listener para formatação em tempo real
+    whatsappInput.addEventListener('input', (e) => {
+      const cursorPosition = e.target.selectionStart;
+      const oldValue = e.target.value;
+      const newValue = applyPhoneMask(e.target.value);
+      
+      e.target.value = newValue;
+      
+      // Ajusta a posição do cursor
+      const newCursorPosition = cursorPosition + (newValue.length - oldValue.length);
+      e.target.setSelectionRange(newCursorPosition, newCursorPosition);
+      
+      // Remove classes de validação durante a digitação
+      e.target.classList.remove('valid', 'invalid');
+    });
+    
+    // Event listener para validação quando o campo perde o foco
+    whatsappInput.addEventListener('blur', (e) => {
+      const isValid = validateWhatsApp(e.target.value);
+      
+      if (e.target.value.length > 0) {
+        if (isValid) {
+          e.target.classList.add('valid');
+          e.target.classList.remove('invalid');
+        } else {
+          e.target.classList.add('invalid');
+          e.target.classList.remove('valid');
+        }
+      } else {
+        e.target.classList.remove('valid', 'invalid');
+      }
+    });
+    
+    // Previne a entrada de caracteres não numéricos
+    whatsappInput.addEventListener('keydown', (e) => {
+      // Permite: backspace, delete, tab, escape, enter
+      if ([8, 9, 27, 13, 46].indexOf(e.keyCode) !== -1 ||
+          // Permite: Ctrl+A, Ctrl+C, Ctrl+V, Ctrl+X
+          (e.keyCode === 65 && e.ctrlKey === true) ||
+          (e.keyCode === 67 && e.ctrlKey === true) ||
+          (e.keyCode === 86 && e.ctrlKey === true) ||
+          (e.keyCode === 88 && e.ctrlKey === true) ||
+          // Permite: home, end, left, right
+          (e.keyCode >= 35 && e.keyCode <= 39)) {
+        return;
+      }
+      // Garante que é um número
+      if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+        e.preventDefault();
+      }
+    });
+  }
+});

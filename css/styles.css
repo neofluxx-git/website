@@ -1771,7 +1771,8 @@ p {
 }
 
 .demo-form input[type=text],
-.demo-form input[type=email] {
+.demo-form input[type=email],
+.demo-form input[type=tel] {
   padding: 0.5rem;
   border: 1px solid #616161;
   border-radius: 4px;
@@ -1780,6 +1781,17 @@ p {
   height: 48px;
   background: #0D2616;
   color: #FFF9E9;
+  transition: border-color 0.3s ease;
+}
+
+.demo-form input[type=tel].valid {
+  border-color: #00DD7D;
+  box-shadow: 0 0 0 2px rgba(0, 221, 125, 0.2);
+}
+
+.demo-form input[type=tel].invalid {
+  border-color: #ff4444;
+  box-shadow: 0 0 0 2px rgba(255, 68, 68, 0.2);
 }
 
 label.checkbox-label {
