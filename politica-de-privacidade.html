@@ -77,53 +77,14 @@
     
     .privacy-wrapper {
       display: flex;
-      gap: 48px;
+      justify-content: center;
       align-items: flex-start;
     }
     
-    .privacy-nav {
-      min-width: 280px;
-      position: sticky;
-      top: 100px;
-      background: #0D2616;
-      border-radius: 12px;
-      padding: 24px;
-    }
-    
-    .privacy-nav h3 {
-      font-size: 1.125rem;
-      margin-bottom: 16px;
-      color: #00DD7D;
-    }
-    
-    .privacy-nav ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-    
-    .privacy-nav li {
-      margin-bottom: 8px;
-    }
-    
-    .privacy-nav a {
-      color: #B5B9A8;
-      font-size: 0.875rem;
-      text-decoration: none;
-      display: block;
-      padding: 8px 12px;
-      border-radius: 4px;
-      transition: all 0.3s ease;
-    }
-    
-    .privacy-nav a:hover {
-      background: #193022;
-      color: #00DD7D;
-    }
-    
     .privacy-main {
-      flex: 1;
+      width: 100%;
       max-width: 800px;
+      margin: 0 auto;
     }
     
     .privacy-section {
@@ -247,21 +208,6 @@
       .privacy-dates {
         flex-direction: column;
         gap: 16px;
-      }
-      
-      .privacy-wrapper {
-        flex-direction: column;
-        gap: 32px;
-      }
-      
-      .privacy-nav {
-        position: static;
-        min-width: auto;
-        order: 2;
-      }
-      
-      .privacy-main {
-        order: 1;
       }
       
       .privacy-hero {
@@ -405,35 +351,6 @@
     <div class="container">
       <div class="privacy-wrapper">
         
-        <!-- Navegação lateral -->
-        <nav class="privacy-nav">
-          <h3>Navegação</h3>
-          <ul>
-            <li><a href="#secao-a">A. Dados dos Visitantes do Site</a></li>
-            <li><a href="#secao-a1">A.1. Dados coletados</a></li>
-            <li><a href="#secao-a2">A.2. Proibição de menores</a></li>
-            <li><a href="#secao-a3">A.3. Finalidades do tratamento</a></li>
-            <li><a href="#secao-a4">A.4. Bases legais</a></li>
-            <li><a href="#secao-a5">A.5. Compartilhamento</a></li>
-            <li><a href="#secao-a6">A.6. Cookies</a></li>
-            <li><a href="#secao-a7">A.7. Do Not Track</a></li>
-            <li><a href="#secao-a8">A.8. Incidentes de segurança</a></li>
-            <li><a href="#secao-a9">A.9. Retenção de dados</a></li>
-            <li><a href="#secao-a10">A.10. Transferência internacional</a></li>
-            <li><a href="#secao-a11">A.11. Práticas globais</a></li>
-            <li><a href="#secao-b">B. Dados dos Usuários da Plataforma</a></li>
-            <li><a href="#secao-b1">B.1. Dados coletados</a></li>
-            <li><a href="#secao-b2">B.2. Finalidades</a></li>
-            <li><a href="#secao-b3">B.3. Bases legais</a></li>
-            <li><a href="#secao-b4">B.4. Compartilhamento</a></li>
-            <li><a href="#secao-b5">B.5. Retenção</a></li>
-            <li><a href="#secao-b6">B.6. Direitos dos titulares</a></li>
-            <li><a href="#secao-b7">B.7. Transferência internacional</a></li>
-            <li><a href="#secao-b8">B.8. Medidas de segurança</a></li>
-            <li><a href="#secao-b9">B.9. Encarregado (DPO)</a></li>
-          </ul>
-        </nav>
-
         <!-- Conteúdo principal -->
         <div class="privacy-main">
           
