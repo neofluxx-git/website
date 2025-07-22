@@ -205,14 +205,56 @@
     }
     
     @media screen and (max-width: 960px) {
+      /* Força box-sizing em todos os elementos */
+      * {
+        box-sizing: border-box !important;
+      }
+      
+      /* Container principal com padding forçado */
       .container {
         padding: 0 16px !important;
         flex-direction: column !important;
+        width: 100% !important;
+        max-width: 100% !important;
       }
       
+      /* Corrige wrapper que pode estar sobrescrevendo */
+      .privacy-wrapper {
+        padding: 0 !important;
+        margin: 0 !important;
+        width: 100% !important;
+      }
+      
+      /* Força largura correta no conteúdo principal */
+      .privacy-main {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+      }
+      
+      /* Corrige footer especificamente */
+      footer#footer .container {
+        padding: 0 16px !important;
+      }
+      
+      footer#footer .container ul {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        margin: 0 !important;
+      }
+      
+      footer#footer .container ul li {
+        padding: 0 !important;
+        margin: 0 !important;
+      }
+      
+      /* Elementos específicos da página */
       .privacy-dates {
         flex-direction: column;
         gap: 16px;
+        margin: 32px 0 !important;
+        padding: 0 !important;
       }
       
       .privacy-hero {
