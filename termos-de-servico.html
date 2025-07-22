@@ -77,53 +77,14 @@
     
     .privacy-wrapper {
       display: flex;
-      gap: 48px;
+      justify-content: center;
       align-items: flex-start;
     }
     
-    .privacy-nav {
-      min-width: 280px;
-      position: sticky;
-      top: 100px;
-      background: #0D2616;
-      border-radius: 12px;
-      padding: 24px;
-    }
-    
-    .privacy-nav h3 {
-      font-size: 1.125rem;
-      margin-bottom: 16px;
-      color: #00DD7D;
-    }
-    
-    .privacy-nav ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-    
-    .privacy-nav li {
-      margin-bottom: 8px;
-    }
-    
-    .privacy-nav a {
-      color: #B5B9A8;
-      font-size: 0.875rem;
-      text-decoration: none;
-      display: block;
-      padding: 8px 12px;
-      border-radius: 4px;
-      transition: all 0.3s ease;
-    }
-    
-    .privacy-nav a:hover {
-      background: #193022;
-      color: #00DD7D;
-    }
-    
     .privacy-main {
-      flex: 1;
+      width: 100%;
       max-width: 800px;
+      margin: 0 auto;
     }
     
     .privacy-section {
@@ -247,21 +208,6 @@
       .privacy-dates {
         flex-direction: column;
         gap: 16px;
-      }
-      
-      .privacy-wrapper {
-        flex-direction: column;
-        gap: 32px;
-      }
-      
-      .privacy-nav {
-        position: static;
-        min-width: auto;
-        order: 2;
-      }
-      
-      .privacy-main {
-        order: 1;
       }
       
       .privacy-hero {
@@ -405,28 +351,6 @@
     <div class="container">
       <div class="privacy-wrapper">
         
-        <!-- Navegação lateral -->
-        <nav class="privacy-nav">
-          <h3>Navegação</h3>
-          <ul>
-            <li><a href="#secao-1">1. Aceitação dos Termos</a></li>
-            <li><a href="#secao-2">2. Definições</a></li>
-            <li><a href="#secao-3">3. Licenças de terceiros</a></li>
-            <li><a href="#secao-4">4. Planos e versão de avaliação</a></li>
-            <li><a href="#secao-5">5. Preços e pagamento</a></li>
-            <li><a href="#secao-6">6. Uso aceitável (AUP)</a></li>
-            <li><a href="#secao-7">7. Suporte e nível de serviço (SLA)</a></li>
-            <li><a href="#secao-8">8. Termos de uso de API</a></li>
-            <li><a href="#secao-9">9. Rescisão e suspensão</a></li>
-            <li><a href="#secao-10">10. Política de privacidade, cookies e confidencialidade</a></li>
-            <li><a href="#secao-11">11. Limitação de responsabilidade</a></li>
-            <li><a href="#secao-12">12. Isenção de garantia</a></li>
-            <li><a href="#secao-13">13. Atualização dos termos</a></li>
-            <li><a href="#secao-14">14. Disposições gerais</a></li>
-            <li><a href="#secao-15">15. Contato</a></li>
-          </ul>
-        </nav>
-
         <!-- Conteúdo principal -->
         <div class="privacy-main">
           
