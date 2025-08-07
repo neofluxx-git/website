@@ -1,0 +1,1200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neofluxx - Preços</title>
+  <link rel="canonical" href="https://neofluxx.com" />
+  <meta name="keywords" content="neofluxx,omnichannel,automação,processos,inteligência artificial,atendimento ao cliente,customer engagement,plataforma de atendimento,instagram,whatsapp,telegram,fluxos de trabalho,integração de canais">
+  <meta name="robots" content="index, follow">
+
+  <link rel="icon" href="./assets/icons/favicon.svg" />
+  
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Neofluxx - Preços">
+  <meta property="og:description" content="Plataforma Omnichannel que integra automação de processos com Inteligência Artificial para transformar cada conversa em valor de negócio.">
+  <meta property="og:url" content="https://neofluxx.com">
+  <meta property="og:image" content="https://neofluxx.com/assets/images/neofluxx-simbolo.jpg" />
+  <meta property="og:site_name" content="Neofluxx - Preços" />
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Shadows+Into+Light&display=swap" rel="stylesheet"/>
+
+  <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+
+  <!-- Header / Navegação -->
+  <header id="header">
+    <div class="header-wrapper">
+      <div id="header-inner" class="header-inner">
+
+        <div class="container">
+
+          <a href="/">
+            <img src="./assets/images/logo.png" alt="logo neofluxx">
+          </a>
+
+          <!-- 1. Checkbox que guarda o estado (oculto) -->
+          <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+
+          <label for="menu-toggle" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+
+          <nav class="nav">
+            <ul>
+              <li><a href="./tools.html">Funcionalidades</a></li>
+              <li><a href="./price.html">Preços</a></li>
+              <li class="nav-login-li"><a href=""><span><img src="./assets/icons/user.svg" alt="login"></span> Login</a>
+              </li>
+              <li> <button type="button" id="open-demo" class="btn open-demo"> Solicitar demonstração </button> </li>
+            </ul>
+          </nav>
+
+          <!-- Menu mobile full‑screen -->
+          <nav id="mobile-menu" class="mobile-menu">
+
+            <div class="mobile-header-nav">
+              <button type="button" class="close-menu" id="btn-close" aria-label="Fechar menu">
+                <img style="width: 24px;" src="./assets/icons/CarteLeftGray.svg" alt="fechar menu">
+              </button>
+
+              <div>
+                <a href="/">
+                  <img src="./assets/images/logo.png" alt="logo neofluxx">
+                </a>
+              </div>
+
+              <div></div>
+            </div>
+
+            <ul class="mobile-menu-list">
+              <div class="-list-header">
+                <li><a href="">Login</a></li>
+                <hr>
+                <li><a href="./tools.html">Funcionalidades</a></li>
+                <hr>
+                <li><a href="./price.html">Preços</a></li>
+              </div>
+
+              <div class="-list-footer">
+                <li class="button-li"><button type="button" class="btn open-demo">Solicitar demonstração</button></li>
+              </div>
+
+            </ul>
+          </nav>
+
+
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="pricing-page">
+    <!-- Hero -->
+    <section class="pricing-hero">
+      <div class="container">
+        <div class="g1"></div>
+        <p class="pretitle">PLANOS &amp; PREÇOS</p>
+        <h1 class="title">
+          Opções de preços <span>personalizadas</span> para atender às suas necessidades
+        </h1>
+        <div class="g2"></div>
+        <div class="g3"></div>
+        <p class="subtitle">
+          Experimente a diferença de preços personalizados conosco - onde suas necessidades moldam o plano perfeito, projetado exclusivamente para você
+        </p>
+        <div class="toggle-pricing">
+          <button class="toggle-btn active" data-type="mensal">Mensal</button>
+          <button class="toggle-btn" data-type="anual">Anual</button>
+          <span class="discount-note" data-text-mensal="Até 10% de desconto" data-text-anual="Até 10% de desconto">Até 10% de desconto</span>
+          <img class="discount-note-img" src="./assets/icons/price-arrow.svg" alt="desconto" 
+          data-original-src="./assets/icons/price-arrow.svg" 
+          data-annual-src="./assets/icons/price-arrow-yellow.svg">
+        </div>
+      </div>
+    </section>
+
+    <!-- Cards de Planos -->
+    <section class="pricing-cards">
+      <div class="pricing-cards-info">
+
+        <div class="item-card-plan">
+          <div class="plan-card-title">
+            <img src="./assets/icons/starter.svg" alt="starter" data-original-src="./assets/icons/starter.svg" data-annual-src="./assets/icons/starter-yellow.svg">
+            <p class="plan-label"><span class="plano-label-title">plano</span> Starter</p>
+          </div>
+
+          <button class="btn btn-primary more-btn">Eu quero</button>
+        </div>
+
+        <div class="item-card-plan">
+          <div class="plan-card-title">
+            <img src="./assets/icons/scale.svg" alt="scale" data-original-src="./assets/icons/scale.svg" data-annual-src="./assets/icons/scale-yellow.svg">
+            <p class="plan-label"><span class="plano-label-title">plano</span> Scale</p>
+          </div>
+
+          <button class="btn btn-primary more-btn">Eu quero</button>
+        </div>
+
+        <div class="item-card-plan">
+          <div class="plan-card-title">
+            <img src="./assets/icons/pro.svg" alt="pro" data-original-src="./assets/icons/pro.svg" data-annual-src="./assets/icons/pro-yellow.svg">
+            <p class="plan-label"><span class="plano-label-title">plano</span> Pro</p>
+          </div>
+
+          <button class="btn btn-primary more-btn">Eu quero</button>
+        </div>
+
+        <div class="item-card-plan">
+          <div class="plan-card-title">
+            <img src="./assets/icons/Enterprise.svg" alt="Enterprise" data-original-src="./assets/icons/Enterprise.svg" data-annual-src="./assets/icons/Enterprise-yellow.svg">
+            <p class="plan-label"><span class="plano-label-title">plano</span> Enterprise</p>
+          </div>
+
+          <button class="btn btn-primary more-btn">Eu quero</button>
+        </div>
+
+      </div>
+
+      <div class="container">
+        <p class="title-mobile">Valores em reais</p>
+        <div class="card-grid">
+          <div class="card-price-title">
+            <img src="./assets/icons/price-value.svg" alt="valor reais"  data-original-src="./assets/icons/price-value.svg" data-annual-src="./assets/icons/price-value-yellow.svg">
+            <div style="width: 100%;">
+            </div>
+            <p class="title">Valores <br>em reais</p>
+          </div>
+
+          <div class="plan-wrapper">
+            <!-- Starter -->
+            <div class="plan-card">
+              <div class="plan-card-title">
+                <img src="./assets/icons/starter.svg" alt="starter" data-original-src="./assets/icons/starter.svg" data-annual-src="./assets/icons/starter-yellow.svg">
+                <p class="plan-label"><span class="plano-label-title">plano</span> Starter</p>
+              </div>
+              <div class="wrapper-price">
+                <p class="plan-price mensal" style="display: flex;">920</p>
+                <p class="plan-price anual">8.064</p>
+                <p class="mes">por mês</p>
+                <p class="ano">por ano</p>
+              </div>
+              <button class="btn btn-primary">Eu quero</button>
+              <img class="line-price" src="./assets/icons/line.svg" alt="Eu quero" data-original-src="./assets/icons/line.svg" data-annual-src="./assets/icons/line-yellow.svg">
+              <ul class="plan-features">
+                <li><img src="./assets/icons/Users.svg" alt="Plano" data-original-src="./assets/icons/Users.svg" data-annual-src="./assets/icons/Users-yellow.svg"> 5 agentes</li>
+                <li><img src="./assets/icons/Tray.svg" alt="Plano" data-original-src="./assets/icons/Tray.svg" data-annual-src="./assets/icons/Tray-yellow.svg"> 2 caixas de entrada</li>
+                <li><img src="./assets/icons/AddressBook.svg" alt="Plano" data-original-src="./assets/icons/AddressBook.svg" data-annual-src="./assets/icons/AddressBook-yellow.svg"> 5.000 contatos</li>
+                <li><img src="./assets/icons/ChatsCircle.svg" alt="Plano" data-original-src="./assets/icons/ChatsCircle.svg" data-annual-src="./assets/icons/ChatsCircle-yellow.svg"> 500 conversas</li>
+              </ul>
+            </div>
+            <!-- Scale -->
+            <div class="plan-card recommended">
+              <div class="plan-card-title">
+                <img src="./assets/icons/scale.svg" alt="scale" data-original-src="./assets/icons/scale.svg" data-annual-src="./assets/icons/scale-yellow.svg">
+                <p class="plan-label"><span class="plano-label-title">plano</span> Scale</p>
+              </div>
+              <div class="wrapper-price">
+                <p class="plan-price mensal" style="display: flex;">1.782</p>
+                <p class="plan-price anual">15.180</p>
+                <p class="mes">por mês</p>
+                <p class="ano">por ano</p>
+              </div>
+              <button class="btn btn-primary">Eu quero</button>
+              <img class="line-price" src="./assets/icons/line.svg" alt="Eu quero" data-original-src="./assets/icons/line.svg" data-annual-src="./assets/icons/line-yellow.svg">
+              <ul class="plan-features">
+                <li><img src="./assets/icons/Users.svg" alt="Plano" data-original-src="./assets/icons/Users.svg" data-annual-src="./assets/icons/Users-yellow.svg"> 10 agentes</li>
+                <li><img src="./assets/icons/Tray.svg" alt="Plano" data-original-src="./assets/icons/Tray.svg" data-annual-src="./assets/icons/Tray-yellow.svg"> 4 caixas de entrada</li>
+                <li><img src="./assets/icons/AddressBook.svg" alt="Plano" data-original-src="./assets/icons/AddressBook.svg" data-annual-src="./assets/icons/AddressBook-yellow.svg"> 10.000 contatos</li>
+                <li><img src="./assets/icons/ChatsCircle.svg" alt="Plano" data-original-src="./assets/icons/ChatsCircle.svg" data-annual-src="./assets/icons/ChatsCircle-yellow.svg"> 1.000 conversas</li>
+              </ul>
+            </div>
+            <!-- Pro -->
+            <div class="plan-card">
+              <div class="plan-card-title">
+                <img src="./assets/icons/pro.svg" alt="pro" data-original-src="./assets/icons/pro.svg" data-annual-src="./assets/icons/pro-yellow.svg">
+                <p class="plan-label"><span class="plano-label-title">plano</span> Pro</p>
+              </div>
+              <div class="wrapper-price">
+                <p class="plan-price mensal" style="display: flex;">2.644</p>
+                <p class="plan-price anual">22.656</p>
+                <p class="mes">por mês</p>
+                <p class="ano">por ano</p>
+              </div>
+              <button class="btn btn-primary">Eu quero</button>
+              <img class="line-price" src="./assets/icons/line.svg" alt="Eu quero" data-original-src="./assets/icons/line.svg" data-annual-src="./assets/icons/line-yellow.svg">
+              <ul class="plan-features">
+                <li><img src="./assets/icons/Users.svg" alt="Plano" data-original-src="./assets/icons/Users.svg" data-annual-src="./assets/icons/Users-yellow.svg"> 20 agentes</li>
+                <li><img src="./assets/icons/Tray.svg" alt="Plano" data-original-src="./assets/icons/Tray.svg" data-annual-src="./assets/icons/Tray-yellow.svg"> 6 caixas de entrada</li>
+                <li><img src="./assets/icons/AddressBook.svg" alt="Plano" data-original-src="./assets/icons/AddressBook.svg" data-annual-src="./assets/icons/AddressBook-yellow.svg"> 20.000 contatos</li>
+                <li><img src="./assets/icons/ChatsCircle.svg" alt="Plano" data-original-src="./assets/icons/ChatsCircle.svg" data-annual-src="./assets/icons/ChatsCircle-yellow.svg"> 1.500 conversas</li>
+              </ul>
+            </div>
+            <!-- Enterprise -->
+            <div class="plan-card">
+              <div class="plan-card-title">
+                <img src="./assets/icons/Enterprise.svg" alt="enterprise" data-original-src="./assets/icons/Enterprise.svg" data-annual-src="./assets/icons/Enterprise-yellow.svg">
+                <p class="plan-label"><span class="plano-label-title">plano</span> Enterprise</p>
+              </div>
+              <div class="wrapper-price">
+                <p class="plan-price mensal"  style="display: flex;">3.574</p>
+                <p class="plan-price anual">30.672</p>
+                <p class="mes">por mês</p>
+                <p class="ano">por ano</p>
+              </div>
+              <button class="btn btn-primary">Eu quero</button>
+              <img class="line-price" src="./assets/icons/line.svg" alt="Eu quero" data-original-src="./assets/icons/line.svg" data-annual-src="./assets/icons/line-yellow.svg">
+              <ul class="plan-features">
+                <li><img src="./assets/icons/Users.svg" alt="Plano" data-original-src="./assets/icons/Users.svg" data-annual-src="./assets/icons/Users-yellow.svg"> 40 agentes</li>
+                <li><img src="./assets/icons/Tray.svg" alt="Plano" data-original-src="./assets/icons/Tray.svg" data-annual-src="./assets/icons/Tray-yellow.svg"> 8 caixas de entrada</li>
+                <li><img src="./assets/icons/AddressBook.svg" alt="Plano" data-original-src="./assets/icons/AddressBook.svg" data-annual-src="./assets/icons/AddressBook-yellow.svg"> 50.000 contatos</li>
+                <li><img src="./assets/icons/ChatsCircle.svg" alt="Plano" data-original-src="./assets/icons/ChatsCircle.svg" data-annual-src="./assets/icons/ChatsCircle-yellow.svg"> 2.500 conversas</li>
+              </ul>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="faq-accordion">
+        <!-- Plan Starter -->
+        <details class="faq-item" close>
+          <summary class="faq-summary">
+
+            <div class="faq-item-icon">
+
+              <div class="plan-card-title">
+                <img src="./assets/icons/starter.svg" alt="starter" data-original-src="./assets/icons/starter.svg" data-annual-src="./assets/icons/starter-yellow.svg">
+                <p class="plan-label"><span class="plano-label-title">plano</span> Starter</p>
+              </div>
+              
+              <div class="wrapper-price">
+                <p class="plan-price-mobile-details mensal">R$ 920,00</p>
+                <p class="plan-price-mobile-details anual">R$ 8.064,00</p>
+                <p class="mes">/ por mês</p>
+                <p class="ano">/ por ano</p>
+              </div>
+              
+            </div>
+
+            <span class="faq-arrow"><img src="./assets/icons/CaretDown.svg" alt=""></span>
+
+          </summary>
+
+          <div class="faq-answer">
+              <div class="faq-wrapper">
+                <button class="btn btn-primary" style="max-width: 100%;">Eu quero</button>
+
+                <!-- Canais -->
+                <div>
+                  <p class="title-faq">Canais</p>
+                  <ul>
+                    <li>Canais <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Chat ao vivo no site <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Facebook <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Instagram <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>E-mail <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Telegram <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Line <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Canal API <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                  </ul>
+                </div>
+
+                <!-- Produtos -->
+                <div>
+                  <p class="title-faq">Produtos</p>
+                  <ul>
+                    <li>Colaboração em equipe <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Chatbots <span class="contact-us">Contate-nos</span></li>
+                    <li>Automações <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>OpenAI <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Aplicativos móveis <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Integrações <span class="contact-us">Contate-nos</span></li>
+                    <li>Resposta automática <img src="./assets/icons/XCircle.svg" alt="not available"></li>
+                  </ul>
+                </div>
+
+                <!-- Gerenciar -->
+                <div>
+                  <p class="title-faq">Gerenciar</p>
+                  <ul>
+                    <li>Etiquetas <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Equipes <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Notas de contato <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Atributos personalizados <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Notas privadas <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Segmentos de contato <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Formulário de pré-chat <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Horário comercial <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Registros de auditoria <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                  </ul>
+                </div>
+
+                <!-- Analisar -->
+                <div>
+                  <p class="title-faq">Analisar</p>
+                  <ul>
+                    <li>Visualização ao vivo <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Relatório de Conversa <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Relatório do agente <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Relatórios de rótulos <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Relatórios CSAT <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Relatórios de caixa de entrada <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Relatórios de equipe <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                  </ul>
+                </div>
+
+                <!-- Produtividade -->
+                <div>
+                  <p class="title-faq">Produtividade</p>
+                  <ul>
+                    <li>Atalhos de teclado <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Barra de comando <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Ações em massa <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Respostas prontas <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Capacidade do agente <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Suporte Neofluxx por e-mail <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>FluxxSupport por Chat <img src="./assets/icons/XCircle.svg" alt="not available"></li>
+                    <li>FluxxSupport por Whatsapp <img src="./assets/icons/XCircle.svg" alt="not available"></li>
+                  </ul>
+                </div>
+
+              </div>
+          </div>
+          
+        </details>
+
+        <!-- Plan Scale -->
+        <details class="faq-item" close>
+          <summary class="faq-summary">
+
+            <div class="faq-item-icon">
+
+              <div class="plan-card-title">
+                <img src="./assets/icons/scale.svg" alt="scale" data-original-src="./assets/icons/scale.svg" data-annual-src="./assets/icons/scale-yellow.svg">
+                <p class="plan-label"><span class="plano-label-title">plano</span> Scale</p>
+              </div>
+              
+              <div class="wrapper-price">
+                <p class="plan-price-mobile-details mensal">R$ 1.782,00</p>
+                <p class="plan-price-mobile-details anual">R$ 15.180,00</p>
+                <p class="mes">/ por mês</p>
+                <p class="ano">/ por ano</p>
+              </div>
+              
+            </div>
+
+            <span class="faq-arrow"><img src="./assets/icons/CaretDown.svg" alt=""></span>
+
+          </summary>
+
+          <div class="faq-answer">
+              <div class="faq-wrapper">
+                <button class="btn btn-primary" style="max-width: 100%;">Eu quero</button>
+
+                <!-- Canais -->
+                <div>
+                  <p class="title-faq">Canais</p>
+                  <ul>
+                    <li>Canais <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Chat ao vivo no site <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Facebook <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Instagram <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>E-mail <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Telegram <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Line <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Canal API <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                  </ul>
+                </div>
+
+                <!-- Produtos -->
+                <div>
+                  <p class="title-faq">Produtos</p>
+                  <ul>
+                    <li>Colaboração em equipe <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Chatbots <span class="contact-us">Contate-nos</span></li>
+                    <li>Automações <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>OpenAI <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Aplicativos móveis <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Integrações <span class="contact-us">Contate-nos</span></li>
+                    <li>Resposta automática <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                  </ul>
+                </div>
+
+                <!-- Gerenciar -->
+                <div>
+                  <p class="title-faq">Gerenciar</p>
+                  <ul>
+                    <li>Etiquetas <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Equipes <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Notas de contato <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Atributos personalizados <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Notas privadas <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Segmentos de contato <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Formulário de pré-chat <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Horário comercial <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Registros de auditoria <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                  </ul>
+                </div>
+
+                <!-- Analisar -->
+                <div>
+                  <p class="title-faq">Analisar</p>
+                  <ul>
+                    <li>Visualização ao vivo <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Relatório de Conversa <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Relatório do agente <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Relatórios de rótulos <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Relatórios CSAT <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Relatórios de caixa de entrada <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Relatórios de equipe <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                  </ul>
+                </div>
+
+                <!-- Produtividade -->
+                <div>
+                  <p class="title-faq">Produtividade</p>
+                  <ul>
+                    <li>Atalhos de teclado <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Barra de comando <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Ações em massa <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Respostas prontas <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Capacidade do agente <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Suporte Neofluxx por e-mail <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>FluxxSupport por Chat <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>FluxxSupport por Whatsapp <img src="./assets/icons/XCircle.svg" alt="not"></li>
+                  </ul>
+                </div>
+
+              </div>
+          </div>
+          
+        </details>
+
+        <!-- Plan Pro -->
+        <details class="faq-item" close>
+          <summary class="faq-summary">
+
+            <div class="faq-item-icon">
+
+              <div class="plan-card-title">
+                <img src="./assets/icons/pro.svg" alt="pro" data-original-src="./assets/icons/pro.svg" data-annual-src="./assets/icons/pro-yellow.svg">
+                <p class="plan-label"><span class="plano-label-title">plano</span> Pro</p>
+              </div>
+              
+              <div class="wrapper-price">
+                <p class="plan-price-mobile-details mensal">R$ 2.644,00</p>
+                <p class="plan-price-mobile-details anual">R$ 22.656,00</p>
+                <p class="mes">/ por mês</p>
+                <p class="ano">/ por ano</p>
+              </div>
+              
+            </div>
+
+            <span class="faq-arrow"><img src="./assets/icons/CaretDown.svg" alt=""></span>
+
+          </summary>
+
+          <div class="faq-answer">
+              <div class="faq-wrapper">
+                <button class="btn btn-primary" style="max-width: 100%;">Eu quero</button>
+
+                <!-- Canais -->
+                <div>
+                  <p class="title-faq">Canais</p>
+                  <ul>
+                    <li>Canais <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Chat ao vivo no site <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Facebook <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Instagram <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>E-mail <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Telegram <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Line <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Canal API <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                  </ul>
+                </div>
+
+                <!-- Produtos -->
+                <div>
+                  <p class="title-faq">Produtos</p>
+                  <ul>
+                    <li>Colaboração em equipe <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Chatbots <span class="contact-us">Contate-nos</span></li>
+                    <li>Automações <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>OpenAI <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Aplicativos móveis <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Integrações <span class="contact-us">Contate-nos</span></li>
+                    <li>Resposta automática <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                  </ul>
+                </div>
+
+                <!-- Gerenciar -->
+                <div>
+                  <p class="title-faq">Gerenciar</p>
+                  <ul>
+                    <li>Etiquetas <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Equipes <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Notas de contato <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Atributos personalizados <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Notas privadas <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Segmentos de contato <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Formulário de pré-chat <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Horário comercial <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Registros de auditoria <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                  </ul>
+                </div>
+
+                <!-- Analisar -->
+                <div>
+                  <p class="title-faq">Analisar</p>
+                  <ul>
+                    <li>Visualização ao vivo <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Relatório de Conversa <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Relatório do agente <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Relatórios de rótulos <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Relatórios CSAT <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Relatórios de caixa de entrada <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Relatórios de equipe <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                  </ul>
+                </div>
+
+                <!-- Produtividade -->
+                <div>
+                  <p class="title-faq">Produtividade</p>
+                  <ul>
+                    <li>Atalhos de teclado <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Barra de comando <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Ações em massa <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Respostas prontas <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Capacidade do agente <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Suporte Neofluxx por e-mail <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>FluxxSupport por Chat <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>FluxxSupport por Whatsapp <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                  </ul>
+                </div>
+
+              </div>
+          </div>
+          
+        </details>
+
+        <!-- Plan Enterprise -->
+        <details class="faq-item" close>
+          <summary class="faq-summary">
+
+            <div class="faq-item-icon">
+
+              <div class="plan-card-title">
+                <img src="./assets/icons/Enterprise.svg" alt="enterprise" data-original-src="./assets/icons/Enterprise.svg" data-annual-src="./assets/icons/Enterprise-yellow.svg">
+                <p class="plan-label"><span class="plano-label-title">plano</span> Enterprise</p>
+              </div>
+              
+              <div class="wrapper-price">
+                <p class="plan-price-mobile-details mensal">R$ 3.574,00</p>
+                <p class="plan-price-mobile-details anual">R$ 30.672,00</p>
+                <p class="mes">/ por mês</p>
+                <p class="ano">/ por ano</p>
+              </div>
+              
+            </div>
+
+            <span class="faq-arrow"><img src="./assets/icons/CaretDown.svg" alt=""></span>
+
+          </summary>
+
+          <div class="faq-answer">
+              <div class="faq-wrapper">
+                <button class="btn btn-primary" style="max-width: 100%;">Eu quero</button>
+
+                <!-- Canais -->
+                <div>
+                  <p class="title-faq">Canais</p>
+                  <ul>
+                    <li>Canais <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Chat ao vivo no site <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Facebook <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Instagram <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>E-mail <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Telegram <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Line <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Canal API <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                  </ul>
+                </div>
+
+                <!-- Produtos -->
+                <div>
+                  <p class="title-faq">Produtos</p>
+                  <ul>
+                    <li>Colaboração em equipe <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Chatbots <span class="contact-us">Contate-nos</span></li>
+                    <li>Automações <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>OpenAI <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Aplicativos móveis <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Integrações <span class="contact-us">Contate-nos</span></li>
+                    <li>Resposta automática <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                  </ul>
+                </div>
+
+                <!-- Gerenciar -->
+                <div>
+                  <p class="title-faq">Gerenciar</p>
+                  <ul>
+                    <li>Etiquetas <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Equipes <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Notas de contato <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Atributos personalizados <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Notas privadas <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Segmentos de contato <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Formulário de pré-chat <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Horário comercial <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Registros de auditoria <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                  </ul>
+                </div>
+
+                <!-- Analisar -->
+                <div>
+                  <p class="title-faq">Analisar</p>
+                  <ul>
+                    <li>Visualização ao vivo <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Relatório de Conversa <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Relatório do agente <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Relatórios de rótulos <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Relatórios CSAT <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Relatórios de caixa de entrada <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Relatórios de equipe <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                  </ul>
+                </div>
+
+                <!-- Produtividade -->
+                <div>
+                  <p class="title-faq">Produtividade</p>
+                  <ul>
+                    <li>Atalhos de teclado <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Barra de comando <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Ações em massa <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Respostas prontas <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Capacidade do agente <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>Suporte Neofluxx por e-mail <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>FluxxSupport por Chat <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                    <li>FluxxSupport por Whatsapp <img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></li>
+                  </ul>
+                </div>
+
+              </div>
+          </div>
+          
+        </details>
+        
+      </div>
+
+    </section>
+
+    <!-- Tabelas de recursos -->
+    <section class="features-table">
+      <div class="container">
+
+        <!-- "Canais" -->
+        <div class="table-group">
+          <h2 class="table-title">Canais</h2>
+          <table>
+            <!-- <thead>
+              <tr>
+                <th>Recursos</th>
+                <th>Starter</th>
+                <th>Scale</th>
+                <th>Pro</th>
+                <th>Enterprise</th>
+              </tr>
+            </thead> -->
+            <tbody>
+              <tr>
+                <td>WhatsApp</td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+              </tr>
+
+              <tr>
+                <td>Chat ao vivo no site</td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+              </tr>
+
+              <tr>
+                <td>Facebook</td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+              </tr>
+              
+              <tr>
+                <td>Instagram</td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+              </tr>
+
+              <tr>
+                <td>E-mail</td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+              </tr>
+
+              <tr>
+                <td>Telegram</td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+              </tr>
+
+              <tr>
+                <td>Line</td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+              </tr>
+
+              <tr>
+                <td>Canal API</td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+        
+        <!-- "Produtos" -->
+        <div class="table-group">
+          <h2 class="table-title">Produtos</h2>
+          <table>
+            <tbody>
+              <tr>
+                <td>Colaboração em equipe</td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+              </tr>
+
+              <tr>
+                <td>Chatbots</td>
+                <td class="check">Contate-nos</td>
+                <td class="check">Contate-nos</td>
+                <td class="check">Contate-nos</td>
+                <td class="check">Contate-nos</td>
+              </tr>
+
+              <tr>
+                <td>Automações</td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+              </tr>
+              
+              <tr>
+                <td>OpenAI</td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+              </tr>
+
+              <tr>
+                <td>Aplicativos móveis</td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+              </tr>
+
+              <tr>
+                <td>Integrações</td>
+                <td class="check">Contate-nos</td>
+                <td class="check">Contate-nos</td>
+                <td class="check">Contate-nos</td>
+                <td class="check">Contate-nos</td>
+              </tr>
+
+              <tr>
+                <td>Resposta automática</td>
+                <td class="check"><img src="./assets/icons/XCircle.svg" alt="not"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+
+        <!-- "Gerenciar" -->
+        <div class="table-group">
+          <h2 class="table-title">Gerenciar</h2>
+          <table>
+            <tbody>
+              <tr>
+                <td>Etiquetas</td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+              </tr>
+
+              <tr>
+                <td>Equipes</td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+              </tr>
+
+              <tr>
+                <td>Notas de contato</td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+              </tr>
+              
+              <tr>
+                <td>Atributos personalizados</td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+              </tr>
+
+              <tr>
+                <td>Notas privadas</td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+              </tr>
+
+              <tr>
+                <td>Segmentos de contato</td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+              </tr>
+
+              <tr>
+                <td>Formulário de pré-chat</td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+              </tr>
+
+              <tr>
+                <td>Horário comercial</td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+              </tr>
+
+              <tr>
+                <td>Registros de auditoria</td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+
+        <!-- "Analisar" -->
+        <div class="table-group">
+          <h2 class="table-title">Analisar</h2>
+          <table>
+            <tbody>
+              <tr>
+                <td>Visualização ao vivo</td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+              </tr>
+
+              <tr>
+                <td>Relatório de Conversa</td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+              </tr>
+
+              <tr>
+                <td>Relatório do agente</td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+              </tr>
+              
+              <tr>
+                <td>Relatórios de rótulos</td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+              </tr>
+
+              <tr>
+                <td>Relatórios CSAT</td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+              </tr>
+
+              <tr>
+                <td>Relatórios de caixa de entrada</td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+              </tr>
+
+              <tr>
+                <td>Relatórios de equipe</td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+              </tr>
+             
+            </tbody>
+          </table>
+        </div>
+
+        <!-- "Produtividade" -->
+        <div class="table-group">
+          <h2 class="table-title">Produtividade</h2>
+          <table>
+            <tbody>
+              <tr>
+                <td>Atalhos de teclado</td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+              </tr>
+
+              <tr>
+                <td>Barra de comando</td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+              </tr>
+
+              <tr>
+                <td>Ações em massa</td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+              </tr>
+              
+              <tr>
+                <td>Respostas prontas</td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+              </tr>
+
+              <tr>
+                <td>Capacidade do agente</td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+              </tr>
+
+              <tr>
+                <td>Suporte Neofluxx por e-mail</td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+              </tr>
+
+              <tr>
+                <td>FluxxSupport por Chat</td>
+                <td class="check"><img src="./assets/icons/XCircle.svg" alt="not"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+              </tr>
+
+              <tr>
+                <td>FluxxSupport por Whatsapp</td>
+                <td class="check"><img src="./assets/icons/XCircle.svg" alt="not"></td>
+                <td class="check"><img src="./assets/icons/XCircle.svg" alt="not"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+                <td class="check"><img src="./assets/icons/CheckCircle.svg" alt="check" data-original-src="./assets/icons/CheckCircle.svg" data-annual-src="./assets/icons/CheckCircle-yellow.svg"></td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-section">
+      <div class="container">
+        <h2 class="faq-title">Perguntas frequentes</h2>
+
+        <div class="accordion">
+          <div class="accordion-item">
+            <button class="accordion-header">A Neofluxx oferece um período de teste? <img class="faq-arrow" src="./assets/icons/CaretDown.svg" alt="expandir"></button>
+            <div class="accordion-content">Não, atualmente não oferecemos um período de teste para a plataforma. A Neofluxx é muito adaptável e, ao se cadastrar, você receberá todo o suporte necessário para o uso inicial. Leia as regras de reembolso para saber mais.</div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header">Qual é a política de reembolso? <img class="faq-arrow" src="./assets/icons/CaretDown.svg" alt="expandir"></button>
+            <div class="accordion-content">Não, atualmente não oferecemos um período de teste para a plataforma. A Neofluxx é muito adaptável e, ao se cadastrar, você receberá todo o suporte necessário para o uso inicial. Leia as regras de reembolso para saber mais.</div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header">Tenho mais de uma empresa. Preciso de um plano Neofluxx para cada uma? <img class="faq-arrow" src="./assets/icons/CaretDown.svg" alt="expandir"></button>
+            <div class="accordion-content">Não, atualmente não oferecemos um período de teste para a plataforma. A Neofluxx é muito adaptável e, ao se cadastrar, você receberá todo o suporte necessário para o uso inicial. Leia as regras de reembolso para saber mais.</div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header">Como faço para atualizar ou rebaixar meu plano? <img class="faq-arrow" src="./assets/icons/CaretDown.svg" alt="expandir"></button>
+            <div class="accordion-content">Não, atualmente não oferecemos um período de teste para a plataforma. A Neofluxx é muito adaptável e, ao se cadastrar, você receberá todo o suporte necessário para o uso inicial. Leia as regras de reembolso para saber mais.</div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header">Como faço para atualPosso pausar minha assinatura sem cancelá-la permanentemente? <img class="faq-arrow" src="./assets/icons/CaretDown.svg" alt="expandir"></button>
+            <div class="accordion-content">Não, atualmente não oferecemos um período de teste para a plataforma. A Neofluxx é muito adaptável e, ao se cadastrar, você receberá todo o suporte necessário para o uso inicial. Leia as regras de reembolso para saber mais.</div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header">Minha pergunta não foi respondida. Como entrar em contato com a Neofluxx? <img class="faq-arrow" src="./assets/icons/CaretDown.svg" alt="expandir"></button>
+            <div class="accordion-content">Não, atualmente não oferecemos um período de teste para a plataforma. A Neofluxx é muito adaptável e, ao se cadastrar, você receberá todo o suporte necessário para o uso inicial. Leia as regras de reembolso para saber mais.</div>
+          </div>
+
+        </div>
+        
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal de Solicitação -->
+  <dialog id="demo-dialog" class="demo-dialog">
+    <form method="dialog" class="demo-form">
+      <button type="button" class="close-btn" id="close-demo" aria-label="Fechar">
+        <img src="./assets/icons/close.svg" alt="fechar">
+      </button>
+      <h2>Solicitação de demonstração</h2>
+
+      <p>Transforme cada conversa em valor de negócio com a plataforma omnichannel e automação de processos da Neofluxx.
+      </p>
+
+      <label for="demo-name">Nome *</label>
+      <input type="text" id="demo-name" name="name" placeholder="Digite seu nome completo" required />
+
+      <label for="demo-email">E-mail *</label>
+      <input type="email" id="demo-email" name="email" placeholder="seu@email.com" required />
+
+      <label for="demo-whatsapp">WhatsApp *</label>
+      <input type="tel" id="demo-whatsapp" name="whatsapp" placeholder="(11) 99999-9999" required />
+
+      <label class="checkbox-label">
+        <input type="checkbox" id="demo-agree" name="agree" required />
+        Li e aceito os termos
+      </label>
+
+      <button type="submit" id="open-demo" class="btn submit-btn">
+        Solicitar demonstração
+      </button>
+    </form>
+  </dialog>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="container">
+
+      <ul>
+        <li>
+          <p>Endereço: </p>
+          <p>Av Paulista Nº 1636 - Cj 03 - 1º andar - Salas 103 E 105</p>
+          <p>Bela Vista - CEP: 01310-200 - São Paulo - SP</p>
+        </li>
+        <li>
+          <p>Contato: </p>
+          <p>contato@neofluxx.com</p>
+        </li>
+        <li>
+          <p>CNPJ: </p>
+          <p>61.806.245/0001-03</p>
+        </li>
+        <li>
+          <p>Legal: </p>
+          <p><a href="/politica-de-privacidade.html" class="footer-legal-links">Política de Privacidade</a></p>
+          <p><a href="/termos-de-servico.html" class="footer-legal-links">Termos de Serviço</a></p>
+        </li>
+        <li>
+          <p>Redes sociais: </p>
+          <ul class="rede-social-footer">
+            <li><img src="./assets/icons/FacebookLogo.svg" alt="facebook"></li>
+            <li><img src="./assets/icons/InstagramLogo.svg" alt="instagram"></li>
+            <li><img src="./assets/icons/XLogo.svg" alt="X - Antigo twitter"></li>
+            <li><img src="./assets/icons/LinkedinLogo.svg" alt="linkedin"></li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="footer-logo">
+        <img src="./assets/images/logo-footer.png" alt="logo neofluxx">
+        <p>©
+          <script>document.write(new Date().getFullYear());</script> Neofluxx. Todos os direitos reservados.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

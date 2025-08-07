@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neofluxx - Ferramentas</title>
+  <link rel="canonical" href="https://neofluxx.com" />
+  <meta name="keywords" content="neofluxx,omnichannel,automação,processos,inteligência artificial,atendimento ao cliente,customer engagement,plataforma de atendimento,instagram,whatsapp,telegram,fluxos de trabalho,integração de canais">
+  <meta name="robots" content="index, follow">
+
+  <link rel="icon" href="./assets/icons/favicon.svg" />
+  
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Neofluxx - Ferramentas">
+  <meta property="og:description" content="Plataforma Omnichannel que integra automação de processos com Inteligência Artificial para transformar cada conversa em valor de negócio.">
+  <meta property="og:url" content="https://neofluxx.com">
+  <meta property="og:image" content="https://neofluxx.com/assets/images/neofluxx-simbolo.jpg" />
+  <meta property="og:site_name" content="Neofluxx - Ferramentas" />
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+
+  <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+
+  <!-- Header / Navegação -->
+  <header id="header">
+    <div class="header-wrapper">
+      <div id="header-inner" class="header-inner">
+
+        <div class="container">
+
+          <a href="/">
+            <img src="./assets/images/logo.png" alt="logo neofluxx">
+          </a>
+
+          <!-- 1. Checkbox que guarda o estado (oculto) -->
+          <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+
+          <label for="menu-toggle" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+
+          <nav class="nav">
+            <ul>
+              <li><a href="./tools.html">Funcionalidades</a></li>
+              <li><a href="./price.html">Preços</a></li>
+              <li class="nav-login-li"><a href=""><span><img src="./assets/icons/user.svg" alt="login"></span> Login</a>
+              </li>
+              <li> <button type="button" id="open-demo" class="btn open-demo"> Solicitar demonstração </button> </li>
+            </ul>
+          </nav>
+
+          <!-- Menu mobile full‑screen -->
+          <nav id="mobile-menu" class="mobile-menu">
+
+            <div class="mobile-header-nav">
+              <button type="button" class="close-menu" id="btn-close" aria-label="Fechar menu">
+                <img style="width: 24px;" src="./assets/icons/CarteLeftGray.svg" alt="fechar menu">
+              </button>
+
+              <div>
+                <a href="/">
+                  <img src="./assets/images/logo.png" alt="logo neofluxx">
+                </a>
+              </div>
+
+              <div></div>
+            </div>
+
+            <ul class="mobile-menu-list">
+              <div class="-list-header">
+                <li><a href="">Login</a></li>
+                <hr>
+                <li><a href="./tools.html">Funcionalidades</a></li>
+                <hr>
+                <li><a href="./price.html">Preços</a></li>
+              </div>
+
+              <div class="-list-footer">
+                <li class="button-li"><button type="button" class="btn open-demo">Solicitar demonstração</button></li>
+              </div>
+
+            </ul>
+          </nav>
+
+
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content (inside <main>) -->
+  <main class="tools-page">
+    <!-- Produtos Section -->
+    <section class="tools-section">
+      <div class="container">
+        <h2 class="section-title">Produtos</h2>
+        
+        <div class="card-grid">
+          
+          <!-- Card Item -->
+          <div class="tool-card">
+            <img class="card-icon" src="./assets/icons/tools-1.svg" alt="Chat ao vivo no site">
+            <h3 class="card-title">Chat ao vivo no site</h3>
+            <p class="card-desc">Chat ao vivo simples e elegante para seu site</p>
+            <a href="#" class="card-link">Saiba mais</a>
+          </div>
+
+          <div class="tool-card">
+            <img class="card-icon" src="./assets/icons/tools-2.svg" alt="Caixa de entrada omnichannel">
+            <h3 class="card-title">Caixa de entrada omnichannel</h3>
+            <p class="card-desc">Conecte qualquer canal e envolva seus clientes em um só lugar</p>
+            <a href="#" class="card-link">Saiba mais</a>
+          </div>
+
+          <div class="tool-card">
+            <img class="card-icon" src="./assets/icons/tools-3.svg" alt="Colaboração em equipe">
+            <h3 class="card-title">Colaboração em equipe</h3>
+            <p class="card-desc">Colabore e gerencie conversas usando uma caixa de entrada compartilhada</p>
+            <a href="#" class="card-link">Saiba mais</a>
+          </div>
+
+          <div class="tool-card">
+            <img class="card-icon" src="./assets/icons/tools-4.svg" alt="Chatbots">
+            <h3 class="card-title">Chatbots</h3>
+            <p class="card-desc">Integre-se facilmente com plataformas de
+            chatbot como Rasa ou Dialogflow para
+            reduzir a carga dos seus agentes</p>
+            <a href="#" class="card-link">Saiba mais</a>
+          </div>
+
+          <div class="tool-card">
+            <img class="card-icon" src="./assets/icons/tools-5.svg" alt="Automações">
+            <h3 class="card-title">Automações</h3>
+            <p class="card-desc">Evite tarefas repetitivas automatizando seus
+              fluxos de trabalho e administre seu negócio no piloto automático</p>
+            <a href="#" class="card-link">Saiba mais</a>
+          </div>
+
+          <div class="tool-card">
+            <img class="card-icon" src="./assets/icons/tools-6.svg" alt="Aplicativos móveis">
+            <h3 class="card-title">Aplicativos móveis</h3>
+            <p class="card-desc">Não perca novos clientes, baixe nossos
+            aplicativos móveis e fale com seus clientes
+            facilmente</p>
+            <a href="#" class="card-link">Saiba mais</a>
+          </div>
+
+          <div class="tool-card">
+            <img class="card-icon" src="./assets/icons/tools-7.svg" alt="Integrações">
+            <h3 class="card-title">Integrações</h3>
+            <p class="card-desc">Turbine seu fluxo de trabalho com integrações</p>
+            <a href="#" class="card-link">Saiba mais</a>
+          </div>
+
+          <div class="tool-card">
+            <img class="card-icon" src="./assets/icons/tools-8.svg" alt="Formulário de pré-bate-papo">
+            <h3 class="card-title">Formulário de pré-bate-papo</h3>
+            <p class="card-desc">Adicione um formulário de bate-papo personalizável antes que um usuário inicie um bate-papo</p>
+            <a href="#" class="card-link">Saiba mais</a>
+          </div>
+
+          <div class="tool-card">
+            <img class="card-icon" src="./assets/icons/tools-9.svg" alt="Central de Ajuda">
+            <h3 class="card-title">Central de Ajuda</h3>
+            <p class="card-desc">Crie uma base de conhecimento para agentes e clientes mais felizes.</p>
+            <a href="#" class="card-link">Saiba mais</a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Gerenciar Section -->
+    <section class="tools-section">
+      <div class="container">
+        <h2 class="section-title">Gerenciar</h2>
+        <div class="card-grid">
+          <div class="tool-card">
+            <img class="card-icon" src="./assets/icons/manage-1.svg" alt="Etiquetas">
+            <h3 class="card-title">Etiquetas</h3>
+            <p class="card-desc">Adicione etiquetas aos seus bate-papos e mantenha tudo organizado</p>
+            <a href="#" class="card-link">Saiba mais</a>
+          </div>
+          <div class="tool-card">
+            <img class="card-icon" src="./assets/icons/manage-2.svg" alt="Equipes">
+            <h3 class="card-title">Equipes</h3>
+            <p class="card-desc">Crie equipes internas para colaboração eficiente</p>
+            <a href="#" class="card-link">Saiba mais</a>
+          </div>
+          <div class="tool-card">
+            <img class="card-icon" src="./assets/icons/manage-3.svg" alt="Notas de contato">
+            <h3 class="card-title">Notas de contato</h3>
+            <p class="card-desc">Adicionar notas aos contatos</p>
+            <a href="#" class="card-link">Saiba mais</a>
+          </div>
+          <div class="tool-card">
+            <img class="card-icon" src="./assets/icons/manage-4.svg" alt="Notas Privadas">
+            <h3 class="card-title">Notas Privadas</h3>
+            <p class="card-desc">Discuta as dúvidas dos clientes em particular com seus colegas de equipe</p>
+            <a href="#" class="card-link">Saiba mais</a>
+          </div>
+          <div class="tool-card">
+            <img class="card-icon" src="./assets/icons/manage-5.svg" alt="Segmentos de contato">
+            <h3 class="card-title">Segmentos de contato</h3>
+            <p class="card-desc">Filtre e agrupe seus contatos em segmentos</p>
+            <a href="#" class="card-link">Saiba mais</a>
+          </div>
+          <div class="tool-card">
+            <img class="card-icon" src="./assets/icons/manage-6.svg" alt="Horário comercial">
+            <h3 class="card-title">Horário comercial</h3>
+            <p class="card-desc">Informe aos clientes que você não está disponível para responder às perguntas deles</p>
+            <a href="#" class="card-link">Saiba mais</a>
+          </div>
+          <div class="tool-card">
+            <img class="card-icon" src="./assets/icons/manage-7.svg" alt="Registros de auditoria">
+            <h3 class="card-title">Registros de auditoria</h3>
+            <p class="card-desc">Rastreie e acompanhe as atividades da conta com facilidade</p>
+            <a href="#" class="card-link">Saiba mais</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Analisar Section -->
+    <section class="tools-section">
+      <div class="container">
+        <h2 class="section-title">Analisar</h2>
+        <div class="card-grid">
+          <!-- Analisar Cards (7) -->
+          <div class="tool-card">
+            <img class="card-icon" src="./assets/icons/analytics-1.svg" alt="Visualização ao vivo">
+            <h3 class="card-title">Visualização ao vivo</h3>
+            <p class="card-desc">Obtenha insights em tempo real sobre suas
+operações de suporte</p>
+            <a href="#" class="card-link">Saiba mais</a>
+          </div>
+          <div class="tool-card">
+            <img class="card-icon" src="./assets/icons/analytics-2.svg" alt="Relatório de Conversa">
+            <h3 class="card-title">Relatório de Conversa</h3>
+            <p class="card-desc">Obtenha informações detalhadas sobre suas
+conversas</p>
+            <a href="#" class="card-link">Saiba mais</a>
+          </div>
+          <div class="tool-card">
+            <img class="card-icon" src="./assets/icons/analytics-3.svg" alt="Relatório do Agente">
+            <h3 class="card-title">Relatório do Agente</h3>
+            <p class="card-desc">Acompanhe o desempenho dos seus agentes
+com relatórios de atualização automática</p>
+            <a href="#" class="card-link">Saiba mais</a>
+          </div>
+          <div class="tool-card">
+            <img class="card-icon" src="./assets/icons/analytics-4.svg" alt="Relatórios de rótulos">
+            <h3 class="card-title">Relatórios de rótulos</h3>
+            <p class="card-desc">Veja quais rótulos geram mais conversas e
+quanto tempo leva para resolvê-los.</p>
+            <a href="#" class="card-link">Saiba mais</a>
+          </div>
+          <div class="tool-card">
+            <img class="card-icon" src="./assets/icons/analytics-5.svg" alt="Relatórios CSAT">
+            <h3 class="card-title">Relatórios CSAT</h3>
+            <p class="card-desc">Obtenha relatórios sobre como os clientes
+respondem ao seu chat</p>
+            <a href="#" class="card-link">Saiba mais</a>
+          </div>
+          <div class="tool-card">
+            <img class="card-icon" src="./assets/icons/analytics-6.svg" alt="Relatórios de caixa de entrada">
+            <h3 class="card-title">Relatórios de caixa de entrada</h3>
+            <p class="card-desc">Obtenha insights sobre suas caixas de
+entrada</p>
+            <a href="#" class="card-link">Saiba mais</a>
+          </div>
+          <div class="tool-card">
+            <img class="card-icon" src="./assets/icons/analytics-7.svg" alt="Relatórios de equipe">
+            <h3 class="card-title">Relatórios de equipe</h3>
+            <p class="card-desc">Analise o desempenho de cada uma de suas
+equipes</p>
+            <a href="#" class="card-link">Saiba mais</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Produtividade Section -->
+    <section class="tools-section">
+      <div class="container">
+        <h2 class="section-title">Produtividade</h2>
+        <div class="card-grid">
+          <!-- Produtividade Cards (5) -->
+          <div class="tool-card">
+            <img class="card-icon" src="./assets/icons/prod-1.svg" alt="Atalhos de teclado">
+            <h3 class="card-title">Atalhos de teclado</h3>
+            <p class="card-desc">Domine o Chatfluxx com atalhos de teclado</p>
+            <a href="#" class="card-link">Saiba mais</a>
+          </div>
+          <div class="tool-card">
+            <img class="card-icon" src="./assets/icons/prod-2.svg" alt="Barra de Comando">
+            <h3 class="card-title">Barra de Comando</h3>
+            <p class="card-desc">Use a barra de comando para executar ações</p>
+            <a href="#" class="card-link">Saiba mais</a>
+          </div>
+          <div class="tool-card">
+            <img class="card-icon" src="./assets/icons/prod-3.svg" alt="Ações em massa">
+            <h3 class="card-title">Ações em massa</h3>
+            <p class="card-desc">Atualize várias conversas de uma vez</p>
+            <a href="#" class="card-link">Saiba mais</a>
+          </div>
+          <div class="tool-card">
+            <img class="card-icon" src="./assets/icons/prod-4.svg" alt="Respostas prontas">
+            <h3 class="card-title">Respostas prontas</h3>
+            <p class="card-desc">Salvar mensagens enviadas com frequência
+como modelos</p>
+            <a href="#" class="card-link">Saiba mais</a>
+          </div>
+          <div class="tool-card">
+            <img class="card-icon" src="./assets/icons/prod-5.svg" alt="Capacidade do Agente">
+            <h3 class="card-title">Capacidade do Agente</h3>
+            <p class="card-desc">Defina limites para atribuição automática de conversas aos seus agentes.</p>
+            <a href="#" class="card-link">Saiba mais</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Integrações Section -->
+    <section class="tools-section">
+      <div class="container">
+        <h2 class="section-title">Integrações</h2>
+        <div class="card-grid">
+          <!-- Integrações Cards (8) -->
+          <div class="tool-card">
+            <img class="card-icon" src="./assets/icons/integration-1.svg" alt="WhatsApp">
+            <h3 class="card-title">WhatsApp</h3>
+            <p class="card-desc">Gerencie suas interações comerciais do
+WhatsApp pelo Chatfluxx.</p>
+            <a href="#" class="card-link">Saiba mais</a>
+          </div>
+          <div class="tool-card">
+            <img class="card-icon" src="./assets/icons/integration-2.svg" alt="Facebook">
+            <h3 class="card-title">Facebook</h3>
+            <p class="card-desc">Mantenha-se conectado com seus clientes
+no Facebook.</p>
+            <a href="#" class="card-link">Saiba mais</a>
+          </div>
+          <div class="tool-card">
+            <img class="card-icon" src="./assets/icons/integration-3.svg" alt="Instagram">
+            <h3 class="card-title">Instagram</h3>
+            <p class="card-desc">Mantenha-se conectado com seus clientes
+no Instagram.</p>
+            <a href="#" class="card-link">Saiba mais</a>
+          </div>
+          <div class="tool-card">
+            <img class="card-icon" src="./assets/icons/integration-4.svg" alt="Telegram">
+            <h3 class="card-title">Telegram</h3>
+            <p class="card-desc">Gerencie suas interações com clientes do
+Telegram pelo Chatfluxx.</p>
+            <a href="#" class="card-link">Saiba mais</a>
+          </div>
+          <div class="tool-card">
+            <img class="card-icon" src="./assets/icons/integration-5.svg" alt="Line">
+            <h3 class="card-title">Line</h3>
+            <p class="card-desc">Gerencie suas interações com clientes do
+Line pelo Chatfluxx.</p>
+            <a href="#" class="card-link">Saiba mais</a>
+          </div>
+          <div class="tool-card">
+            <img class="card-icon" src="./assets/icons/integration-6.svg" alt="SMS">
+            <h3 class="card-title">SMS</h3>
+            <p class="card-desc">Gerencie suas interações com clientes por
+SMS no Chatwoot.</p>
+            <a href="#" class="card-link">Saiba mais</a>
+          </div>
+          <div class="tool-card">
+            <img class="card-icon" src="./assets/icons/integration-7.svg" alt="E-mail">
+            <h3 class="card-title">E-mail</h3>
+            <p class="card-desc">Gerencie suas interações de e-mail com
+clientes pelo Chatfluxx.</p>
+            <a href="#" class="card-link">Saiba mais</a>
+          </div>
+          <div class="tool-card">
+            <img class="card-icon" src="./assets/icons/integration-8.svg" alt="Slack">
+            <h3 class="card-title">Slack</h3>
+            <p class="card-desc">Responda às dúvidas dos seus clientes no
+Slack.</p>
+            <a href="#" class="card-link">Saiba mais</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal de Solicitação -->
+  <dialog id="demo-dialog" class="demo-dialog">
+    <form method="dialog" class="demo-form">
+      <button type="button" class="close-btn" id="close-demo" aria-label="Fechar">
+        <img src="./assets/icons/close.svg" alt="fechar">
+      </button>
+      <h2>Solicitação de demonstração</h2>
+
+      <p>Transforme cada conversa em valor de negócio com a plataforma omnichannel e automação de processos da Neofluxx.
+      </p>
+
+      <label for="demo-name">Nome *</label>
+      <input type="text" id="demo-name" name="name" placeholder="Digite seu nome completo" required />
+
+      <label for="demo-email">E-mail *</label>
+      <input type="email" id="demo-email" name="email" placeholder="seu@email.com" required />
+
+      <label for="demo-whatsapp">WhatsApp *</label>
+      <input type="tel" id="demo-whatsapp" name="whatsapp" placeholder="(11) 99999-9999" required />
+
+      <label class="checkbox-label">
+        <input type="checkbox" id="demo-agree" name="agree" required />
+        Li e aceito os termos
+      </label>
+
+      <button type="submit" id="open-demo" class="btn submit-btn">
+        Solicitar demonstração
+      </button>
+    </form>
+  </dialog>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="container">
+
+      <ul>
+        <li>
+          <p>Endereço: </p>
+          <p>Av Paulista Nº 1636 - Cj 03 - 1º andar - Salas 103 E 105</p>
+          <p>Bela Vista - CEP: 01310-200 - São Paulo - SP</p>
+        </li>
+        <li>
+          <p>Contato: </p>
+          <p>contato@neofluxx.com</p>
+        </li>
+        <li>
+          <p>CNPJ: </p>
+          <p>61.806.245/0001-03</p>
+        </li>
+        <li>
+          <p>Legal: </p>
+          <p><a href="/politica-de-privacidade.html" class="footer-legal-links">Política de Privacidade</a></p>
+          <p><a href="/termos-de-servico.html" class="footer-legal-links">Termos de Serviço</a></p>
+        </li>
+        <li>
+          <p>Redes sociais: </p>
+          <ul class="rede-social-footer">
+            <li><img src="./assets/icons/FacebookLogo.svg" alt="facebook"></li>
+            <li><img src="./assets/icons/InstagramLogo.svg" alt="instagram"></li>
+            <li><img src="./assets/icons/XLogo.svg" alt="X - Antigo twitter"></li>
+            <li><img src="./assets/icons/LinkedinLogo.svg" alt="linkedin"></li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="footer-logo">
+        <img src="./assets/images/logo-footer.png" alt="logo neofluxx">
+        <p>©
+          <script>document.write(new Date().getFullYear());</script> Neofluxx. Todos os direitos reservados.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

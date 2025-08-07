@@ -213,257 +213,168 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-// Máscara para campo de WhatsApp
+
+// document.querySelectorAll('.toggle-btn').forEach(btn => {
+//   btn.addEventListener('click', () => {
+//     // atualiza visual do toggle
+//     document.querySelectorAll('.toggle-btn').forEach(b => b.classList.remove('active'));
+//     btn.classList.add('active');
+
+//     const type = btn.dataset.type; // 'mensal' ou 'anual'
+
+//     // para cada card, mostre um e oculte o outro
+//     document.querySelectorAll('.plan-card').forEach(card => {
+//       const mensalEl = card.querySelector('.plan-price.mensal');
+//       const anualEl  = card.querySelector('.plan-price.anual');
+//       const mensalEl1 = card.querySelector('.mes');
+//       const anualEl1  = card.querySelector('.ano');
+      
+//       if (type === 'mensal') {
+//         mensalEl.style.display = 'flex';
+//         anualEl.style.display  = 'none';
+
+//         mensalEl1.style.display = 'flex';
+//         anualEl1.style.display = 'none';
+//       } else {
+//         mensalEl.style.display = 'none';
+//         anualEl.style.display  = 'flex';
+
+//         mensalEl1.style.display = 'none';
+//         anualEl1.style.display = 'flex';
+//       }
+//     });
+
+//     // para cada card, mostre um e oculte o outro
+//     document.querySelectorAll('.faq-item-icon').forEach(card => {
+//       const mensalEl = card.querySelector('.plan-price-mobile-details.mensal');
+//       const anualEl  = card.querySelector('.plan-price-mobile-details.anual');
+//       const mensalEl1 = card.querySelector('.mes');
+//       const anualEl1  = card.querySelector('.ano');
+
+//       console.log(mensalEl)
+      
+//       if (type === 'mensal') {
+//         mensalEl.style.display = 'block';
+//         anualEl.style.display  = 'none';
+
+//         mensalEl1.style.display = 'block';
+//         anualEl1.style.display = 'none';
+//       } else {
+//         mensalEl.style.display = 'none';
+//         anualEl.style.display  = 'block';
+        
+//         mensalEl1.style.display = 'none';
+//         anualEl1.style.display = 'block';
+//       }
+//     });
+//   });
+// });
+
 document.addEventListener('DOMContentLoaded', () => {
-  const whatsappInput = document.getElementById('demo-whatsapp');
-  
-  if (whatsappInput) {
-    // Função para aplicar a máscara de telefone
-    function applyPhoneMask(value) {
-      // Remove tudo que não é dígito
-      const numbers = value.replace(/\D/g, '');
-      
-      // Aplica a máscara baseada na quantidade de dígitos
-      if (numbers.length <= 2) {
-        return `(${numbers}`;
-      } else if (numbers.length <= 7) {
-        return `(${numbers.slice(0, 2)}) ${numbers.slice(2)}`;
-      } else {
-        return `(${numbers.slice(0, 2)}) ${numbers.slice(2, 7)}-${numbers.slice(7, 11)}`;
-      }
-    }
-    
-    // Função para validar o número de WhatsApp
-    function validateWhatsApp(value) {
-      const numbers = value.replace(/\D/g, '');
-      return numbers.length === 11;
-    }
-    
-    // Event listener para formatação em tempo real
-    whatsappInput.addEventListener('input', (e) => {
-      const cursorPosition = e.target.selectionStart;
-      const oldValue = e.target.value;
-      const newValue = applyPhoneMask(e.target.value);
-      
-      e.target.value = newValue;
-      
-      // Ajusta a posição do cursor
-      const newCursorPosition = cursorPosition + (newValue.length - oldValue.length);
-      e.target.setSelectionRange(newCursorPosition, newCursorPosition);
-      
-      // Remove classes de validação durante a digitação
-      e.target.classList.remove('valid', 'invalid');
-    });
-    
-    // Event listener para validação quando o campo perde o foco
-    whatsappInput.addEventListener('blur', (e) => {
-      const isValid = validateWhatsApp(e.target.value);
-      
-      if (e.target.value.length > 0) {
-        if (isValid) {
-          e.target.classList.add('valid');
-          e.target.classList.remove('invalid');
-        } else {
-          e.target.classList.add('invalid');
-          e.target.classList.remove('valid');
-        }
-      } else {
-        e.target.classList.remove('valid', 'invalid');
-      }
-    });
-    
-    // Previne a entrada de caracteres não numéricos
-    whatsappInput.addEventListener('keydown', (e) => {
-      // Permite: backspace, delete, tab, escape, enter
-      if ([8, 9, 27, 13, 46].indexOf(e.keyCode) !== -1 ||
-          // Permite: Ctrl+A, Ctrl+C, Ctrl+V, Ctrl+X
-          (e.keyCode === 65 && e.ctrlKey === true) ||
-          (e.keyCode === 67 && e.ctrlKey === true) ||
-          (e.keyCode === 86 && e.ctrlKey === true) ||
-          (e.keyCode === 88 && e.ctrlKey === true) ||
-          // Permite: home, end, left, right
-          (e.keyCode >= 35 && e.keyCode <= 39)) {
-        return;
-      }
-      // Garante que é um número
-      if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
-        e.preventDefault();
-      }
-    });
-  }
+  const toggleCheckbox = document.getElementById('menu-toggle');
+  const closeBtn       = document.getElementById('btn-close');
+
+  toggleCheckbox.addEventListener('change', () => {
+    document.body.classList.toggle('no-scroll', toggleCheckbox.checked);
+  });
+
+  closeBtn.addEventListener('click', () => {
+    toggleCheckbox.checked = false;
+    document.body.classList.remove('no-scroll');
+  });
 });
 
-// API Demo Request - Solicitação de demonstração
-document.addEventListener('DOMContentLoaded', () => {
-  const demoForm = document.querySelector('.demo-form');
-  const submitBtn = document.querySelector('.submit-btn');
-  const dialog = document.getElementById('demo-dialog');
-  
-  if (demoForm && submitBtn) {
-    // Função para validar email
-    function validateEmail(email) {
-      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      return emailRegex.test(email);
-    }
-    
-    // Função para validar WhatsApp (11 dígitos)
-    function validateWhatsApp(phone) {
-      const numbers = phone.replace(/\D/g, '');
-      return numbers.length === 11;
-    }
-    
-    // Função para mostrar mensagem de feedback
-    function showMessage(message, type = 'success') {
-      // Remove mensagem anterior se existir
-      const existingMessage = demoForm.querySelector('.feedback-message');
-      if (existingMessage) {
-        existingMessage.remove();
-      }
-      
-      // Cria nova mensagem
-      const messageDiv = document.createElement('div');
-      messageDiv.className = `feedback-message ${type}`;
-      messageDiv.style.cssText = `
-        padding: 12px;
-        margin: 10px 0;
-        border-radius: 4px;
-        font-size: 14px;
-        text-align: center;
-        ${type === 'success' ? 
-          'background-color: #d4edda; color: #155724; border: 1px solid #c3e6cb;' : 
-          'background-color: #f8d7da; color: #721c24; border: 1px solid #f5c6cb;'
-        }
-      `;
-      messageDiv.textContent = message;
-      
-      // Insere a mensagem antes do botão
-      submitBtn.parentNode.insertBefore(messageDiv, submitBtn);
-      
-      // Remove a mensagem após 5 segundos
-      setTimeout(() => {
-        if (messageDiv.parentNode) {
-          messageDiv.remove();
-        }
-      }, 5000);
-    }
-    
-    // Função para fazer a chamada à API
-    async function submitDemoRequest(formData) {
-      try {
-        const response = await fetch('https://demo-solicitation-neofluxx.neofluxx01.workers.dev/', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-            'x-api-key': '123456'
-          },
-          body: JSON.stringify(formData)
-        });
-        
-        if (!response.ok) {
-          throw new Error(`Erro na requisição: ${response.status}`);
-        }
-        
-        const result = await response.json();
-        return { success: true, data: result };
-        
-      } catch (error) {
-        console.error('Erro ao enviar solicitação:', error);
-        return { success: false, error: error.message };
-      }
-    }
-    
-    // Event listener para o submit do formulário
-    demoForm.addEventListener('submit', async (e) => {
-      e.preventDefault();
-      
-      // Captura os valores dos campos
-      const nameInput = document.getElementById('demo-name');
-      const emailInput = document.getElementById('demo-email');
-      const whatsappInput = document.getElementById('demo-whatsapp');
-      const agreeCheckbox = document.getElementById('demo-agree');
-      
-      const name = nameInput.value.trim();
-      const email = emailInput.value.trim();
-      const whatsapp = whatsappInput.value.trim();
-      const agreed = agreeCheckbox.checked;
-      
-      // Validações
-      if (!name) {
-        showMessage('Por favor, preencha seu nome.', 'error');
-        nameInput.focus();
-        return;
-      }
-      
-      if (!email) {
-        showMessage('Por favor, preencha seu e-mail.', 'error');
-        emailInput.focus();
-        return;
-      }
-      
-      if (!validateEmail(email)) {
-        showMessage('Por favor, insira um e-mail válido.', 'error');
-        emailInput.focus();
-        return;
-      }
-      
-      if (!whatsapp) {
-        showMessage('Por favor, preencha seu WhatsApp.', 'error');
-        whatsappInput.focus();
-        return;
-      }
-      
-      if (!validateWhatsApp(whatsapp)) {
-        showMessage('Por favor, insira um número de WhatsApp válido (11 dígitos).', 'error');
-        whatsappInput.focus();
-        return;
-      }
-      
-      if (!agreed) {
-        showMessage('Por favor, aceite os termos para continuar.', 'error');
-        agreeCheckbox.focus();
-        return;
-      }
-      
-      // Prepara os dados para envio
-      const formData = {
-        nome: name,
-        email: email,
-        phone: whatsapp.replace(/\D/g, '') // Remove formatação, envia apenas números
-      };
-      
-      // Estado de loading
-      const originalText = submitBtn.textContent;
-      submitBtn.textContent = 'Enviando...';
-      submitBtn.disabled = true;
-      submitBtn.style.opacity = '0.7';
-      
-      try {
-        // Faz a chamada à API
-        const result = await submitDemoRequest(formData);
-        
-        if (result.success) {
-          showMessage('Solicitação enviada com sucesso! Entraremos em contato em breve.', 'success');
-          
-          // Limpa o formulário
-          demoForm.reset();
-          
-          // Fecha o modal após 2 segundos
-          setTimeout(() => {
-            dialog.close();
-          }, 2000);
-          
-        } else {
-          showMessage('Erro ao enviar solicitação. Tente novamente.', 'error');
-        }
-        
-      } catch (error) {
-        showMessage('Erro de conexão. Verifique sua internet e tente novamente.', 'error');
-      } finally {
-        // Restaura o estado do botão
-        submitBtn.textContent = originalText;
-        submitBtn.disabled = false;
-        submitBtn.style.opacity = '1';
-      }
+// Toggle e accordion
+document.querySelectorAll('.toggle-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    // ATUALIZA O VISUAL DO BOTÃO
+    document.querySelectorAll('.toggle-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+
+    const type = btn.dataset.type; // 'mensal' ou 'anual'
+    const isAnnual = type === 'anual';
+
+    // ADICIONA/REMOVE A CLASSE NO BODY PARA ATIVAR O CSS
+    document.body.classList.toggle('anual-active', isAnnual);
+
+    // TROCA OS PREÇOS E TEXTOS 'POR MÊS' / 'POR ANO' NOS CARDS PRINCIPAIS
+    document.querySelectorAll('.plan-card').forEach(card => {
+      card.querySelector('.plan-price.mensal').style.display = isAnnual ? 'none' : 'flex';
+      card.querySelector('.plan-price.anual').style.display  = isAnnual ? 'flex' : 'none';
+      card.querySelector('.mes').style.display = isAnnual ? 'none' : 'flex';
+      card.querySelector('.ano').style.display  = isAnnual ? 'flex' : 'none';
     });
+    
+    // TROCA OS PREÇOS E TEXTOS NOS DETALHES (FAQ/ACCORDION)
+    document.querySelectorAll('.faq-item-icon').forEach(card => {
+      card.querySelector('.plan-price-mobile-details.mensal').style.display = isAnnual ? 'none' : 'block';
+      card.querySelector('.plan-price-mobile-details.anual').style.display  = isAnnual ? 'block' : 'none';
+      card.querySelector('.mes').style.display = isAnnual ? 'none' : 'block';
+      card.querySelector('.ano').style.display  = isAnnual ? 'block' : 'none';
+    });
+
+    // TROCA AS IMAGENS
+    document.querySelectorAll('img[data-annual-src]').forEach(img => {
+        const originalSrc = img.dataset.originalSrc;
+        const annualSrc = img.dataset.annualSrc;
+        img.src = isAnnual ? annualSrc : originalSrc;
+    });
+
+    // TROCA OS TEXTOS
+    document.querySelectorAll('[data-text-anual]').forEach(el => {
+      const monthlyText = el.dataset.textMensal;
+      const annualText = el.dataset.textAnual;
+      el.textContent = isAnnual ? annualText : monthlyText;
+    });
+
+  });
+});
+
+document.querySelectorAll('.accordion-header').forEach(header => {
+  header.addEventListener('click', () => {
+    const item = header.parentElement; // .accordion-item
+    const isOpen = item.classList.contains('open');
+
+    // fecha todos (se quiser um só aberto por vez)
+    document.querySelectorAll('.accordion-item.open').forEach(openItem => {
+      openItem.classList.remove('open');
+    });
+
+    // alterna o atual
+    if (!isOpen) {
+      item.classList.add('open');
+    }
+  });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  const cards        = document.querySelector('.pricing-cards-info');
+  const table        = document.querySelector('.features-table');
+  const headerH      = document.querySelector('#header').offsetHeight;
+  const tableTop     = table.offsetTop;
+  const tableHeight  = table.offsetHeight;
+  const buffer       = 200; // px antes do fim da tabela para esconder
+  const minWidthShow = 960; // px — abaixo disso nunca exibe
+
+  const tableEndThreshold = tableTop + tableHeight - buffer;
+
+  function updateCardsVisibility() {
+    const scrollPos = window.scrollY + headerH;
+    const isWide   = window.innerWidth >= minWidthShow;
+    const inRange  = scrollPos >= tableTop && scrollPos < tableEndThreshold;
+
+    if (isWide && inRange) {
+      cards.classList.add('fixed');
+      cards.style.display = 'flex';
+    } else {
+      cards.classList.remove('fixed');
+      cards.style.display = 'none';
+    }
   }
+
+  window.addEventListener('scroll', updateCardsVisibility);
+  window.addEventListener('resize', updateCardsVisibility);
+
+  // inicializa no load
+  updateCardsVisibility();
 });
