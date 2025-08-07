@@ -1522,7 +1522,7 @@ strong {
   justify-content: end;
   align-items: start;
   max-width: 1220px;
-  gap: 22px;
+  gap: 16px;
   margin: 0 auto;
   width: 100%;
 }
@@ -1596,7 +1596,7 @@ strong {
 .pricing-page .pricing-cards-info.fixed {
   position: fixed;
   top: 80px;
-  left: 0;
+  left: -43px;
   right: 0;
   z-index: 1000;
   background: transparent;
