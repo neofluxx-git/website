@@ -2544,7 +2544,8 @@ p {
 }
 
 .demo-form input[type=text],
-.demo-form input[type=email] {
+.demo-form input[type=email],
+.demo-form input[type=tel] {
   padding: 0.5rem;
   border: 1px solid #616161;
   border-radius: 4px;

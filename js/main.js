@@ -378,3 +378,73 @@ document.addEventListener('DOMContentLoaded', () => {
   // inicializa no load
   updateCardsVisibility();
 });
+
+// Máscara de telefone
+document.addEventListener('DOMContentLoaded', () => {
+  const phoneInput = document.getElementById('demo-whatsapp');
+  
+  if (phoneInput) {
+    // Função para aplicar a máscara
+    function applyPhoneMask(value) {
+      // Remove tudo que não é número
+      const numbers = value.replace(/\D/g, '');
+      
+      // Aplica a máscara conforme o tamanho
+      if (numbers.length <= 2) {
+        return `(${numbers}`;
+      } else if (numbers.length <= 7) {
+        return `(${numbers.slice(0, 2)}) ${numbers.slice(2)}`;
+      } else {
+        return `(${numbers.slice(0, 2)}) ${numbers.slice(2, 7)}-${numbers.slice(7, 11)}`;
+      }
+    }
+    
+    // Event listener para formatação em tempo real
+    phoneInput.addEventListener('input', (e) => {
+      const cursorPosition = e.target.selectionStart;
+      const oldValue = e.target.value;
+      const newValue = applyPhoneMask(oldValue);
+      
+      e.target.value = newValue;
+      
+      // Ajusta a posição do cursor
+      let newCursorPosition = cursorPosition;
+      if (newValue.length > oldValue.length) {
+        newCursorPosition = cursorPosition + (newValue.length - oldValue.length);
+      }
+      
+      e.target.setSelectionRange(newCursorPosition, newCursorPosition);
+    });
+    
+    // Permite apenas números e caracteres de formatação
+    phoneInput.addEventListener('keydown', (e) => {
+      const allowedKeys = [
+        'Backspace', 'Delete', 'Tab', 'Escape', 'Enter',
+        'ArrowLeft', 'ArrowRight', 'ArrowUp', 'ArrowDown',
+        'Home', 'End'
+      ];
+      
+      // Permite teclas especiais
+      if (allowedKeys.includes(e.key)) {
+        return;
+      }
+      
+      // Permite Ctrl+A, Ctrl+C, Ctrl+V, Ctrl+X
+      if (e.ctrlKey && ['a', 'c', 'v', 'x'].includes(e.key.toLowerCase())) {
+        return;
+      }
+      
+      // Permite apenas números
+      if (!/^\d$/.test(e.key)) {
+        e.preventDefault();
+      }
+    });
+    
+    // Limita o tamanho máximo
+    phoneInput.addEventListener('input', (e) => {
+      if (e.target.value.length > 15) {
+        e.target.value = e.target.value.slice(0, 15);
+      }
+    });
+  }
+});
