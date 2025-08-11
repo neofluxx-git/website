@@ -348,9 +348,16 @@ document.querySelectorAll('.accordion-header').forEach(header => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-  const cards        = document.querySelector('.pricing-cards-info');
-  const table        = document.querySelector('.features-table');
-  const headerH      = document.querySelector('#header').offsetHeight;
+  const cards = document.querySelector('.pricing-cards-info');
+  const table = document.querySelector('.features-table');
+  const header = document.querySelector('#header');
+  
+  // Verifica se os elementos existem antes de usar
+  if (!cards || !table || !header) {
+    return; // Sai da função se algum elemento não existir
+  }
+  
+  const headerH      = header.offsetHeight;
   const tableTop     = table.offsetTop;
   const tableHeight  = table.offsetHeight;
   const buffer       = 200; // px antes do fim da tabela para esconder
@@ -444,6 +451,174 @@ document.addEventListener('DOMContentLoaded', () => {
     phoneInput.addEventListener('input', (e) => {
       if (e.target.value.length > 15) {
         e.target.value = e.target.value.slice(0, 15);
+      }
+    });
+  }
+});
+
+// Implementação da CTA do formulário de demonstração
+document.addEventListener('DOMContentLoaded', () => {
+  const demoForm = document.querySelector('.demo-form');
+  const submitBtn = document.querySelector('.submit-btn');
+  const dialog = document.getElementById('demo-dialog');
+  
+  if (demoForm && submitBtn) {
+    // Função para validar email
+    function isValidEmail(email) {
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return emailRegex.test(email);
+    }
+    
+    // Função para validar telefone (mínimo 10 dígitos)
+    function isValidPhone(phone) {
+      const numbers = phone.replace(/\D/g, '');
+      return numbers.length >= 10;
+    }
+    
+    // Função para mostrar mensagem de erro
+    function showMessage(message, isError = false) {
+      // Remove mensagem anterior se existir
+      const existingMessage = demoForm.querySelector('.form-message');
+      if (existingMessage) {
+        existingMessage.remove();
+      }
+      
+      // Cria nova mensagem
+      const messageDiv = document.createElement('div');
+      messageDiv.className = `form-message ${isError ? 'error' : 'success'}`;
+      messageDiv.textContent = message;
+      messageDiv.style.cssText = `
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 4px;
+        text-align: center;
+        font-size: 14px;
+        ${isError ? 
+          'background-color: #fee; color: #c33; border: 1px solid #fcc;' : 
+          'background-color: #efe; color: #363; border: 1px solid #cfc;'
+        }
+      `;
+      
+      // Insere antes do botão
+      submitBtn.parentNode.insertBefore(messageDiv, submitBtn);
+      
+      // Remove mensagem após 5 segundos
+      setTimeout(() => {
+        if (messageDiv.parentNode) {
+          messageDiv.remove();
+        }
+      }, 5000);
+    }
+    
+    // Função para enviar dados para a API
+    async function submitDemoRequest(nome, email, whatsapp) {
+      try {
+        const response = await fetch('https://demo-solicitation-neofluxx.neofluxx01.workers.dev/', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'X-API-Key': '123456'
+          },
+          body: JSON.stringify({
+            nome: nome,
+            email: email,
+            whatsapp: whatsapp
+          })
+        });
+        
+        if (!response.ok) {
+          throw new Error(`Erro HTTP: ${response.status}`);
+        }
+        
+        return await response.json();
+      } catch (error) {
+        console.error('Erro ao enviar solicitação:', error);
+        throw error;
+      }
+    }
+    
+    // Handler do submit do formulário
+    demoForm.addEventListener('submit', async (event) => {
+      event.preventDefault();
+      
+      // Coleta os dados do formulário
+      const nome = document.getElementById('demo-name').value.trim();
+      const email = document.getElementById('demo-email').value.trim();
+      const whatsapp = document.getElementById('demo-whatsapp').value.trim();
+      const agree = document.getElementById('demo-agree').checked;
+      
+      // Validações
+      if (!nome) {
+        showMessage('Por favor, preencha seu nome.', true);
+        return;
+      }
+      
+      if (!email) {
+        showMessage('Por favor, preencha seu e-mail.', true);
+        return;
+      }
+      
+      if (!isValidEmail(email)) {
+        showMessage('Por favor, insira um e-mail válido.', true);
+        return;
+      }
+      
+      if (!whatsapp) {
+        showMessage('Por favor, preencha seu WhatsApp.', true);
+        return;
+      }
+      
+      if (!isValidPhone(whatsapp)) {
+        showMessage('Por favor, insira um número de WhatsApp válido.', true);
+        return;
+      }
+      
+      if (!agree) {
+        showMessage('Por favor, aceite os termos para continuar.', true);
+        return;
+      }
+      
+      // Estado de loading
+      const originalText = submitBtn.textContent;
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Enviando...';
+      
+      try {
+        // Envia os dados para a API
+        await submitDemoRequest(nome, email, whatsapp);
+        
+        // Sucesso
+        showMessage('Solicitação enviada com sucesso! Entraremos em contato em breve.');
+        
+        // Reset do formulário
+        demoForm.reset();
+        
+        // Fecha o modal após 2 segundos
+        setTimeout(() => {
+          dialog.close();
+        }, 2000);
+        
+      } catch (error) {
+        // Erro
+        let errorMessage = 'Erro ao enviar solicitação. Tente novamente.';
+        
+        if (error.message.includes('Failed to fetch')) {
+          // Verifica se é um erro de CORS (comum em desenvolvimento local)
+          if (window.location.origin.includes('127.0.0.1') || window.location.origin.includes('localhost')) {
+            errorMessage = 'Erro de CORS: Esta funcionalidade só funciona no domínio de produção (https://neofluxx.com). Para testar localmente, configure um proxy ou faça deploy.';
+          } else {
+            errorMessage = 'Erro de conexão. Verifique sua internet e tente novamente.';
+          }
+        } else if (error.message.includes('HTTP')) {
+          errorMessage = 'Erro no servidor. Tente novamente em alguns minutos.';
+        }
+        
+        showMessage(errorMessage, true);
+        
+      } finally {
+        // Restaura o botão
+        submitBtn.disabled = false;
+        submitBtn.textContent = originalText;
       }
     });
   }
