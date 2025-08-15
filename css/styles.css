@@ -1370,7 +1370,7 @@ strong {
 }
 .pricing-page section.pricing-cards .container .plan-card.recommended::after {
   border-radius: 100px;
-  content: "🚀 o mais procurado";
+  content: "🚀 mais procurado";
   position: absolute;
   width: 140px;
   height: 30px;
@@ -1384,8 +1384,7 @@ strong {
   font-size: 12px;
   display: flex;
   justify-content: center;
-  align-items: center;
-  text-transform: uppercase;
+  align-items: center; 
   box-shadow: rgba(134, 201, 145, 0.2) 0px 0px 29px 6px;
   font-weight: 500;
 }
