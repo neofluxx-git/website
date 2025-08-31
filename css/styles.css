@@ -1321,13 +1321,6 @@ strong {
   vertical-align: 5px;
   margin-right: 8px;
 }
-.pricing-page section.pricing-cards .container .plan-card .plan-price::after {
-  content: ",00";
-  display: inline-block;
-  font-size: 1.5rem;
-  vertical-align: 5px;
-  margin-right: 8px;
-}
 .pricing-page section.pricing-cards .container .plan-card .plan-price span {
   display: block;
   font-size: 0.875rem;
